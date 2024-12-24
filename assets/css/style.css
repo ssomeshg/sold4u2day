@@ -1,0 +1,76 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color:#F3722A !important;
+    --secondary-color:#181818 ;
+    --primary-gradient:  linear-gradient(45deg, #E55220, #A9340C,#852200);
+    --default-font:"Inter", serif;
+    --secondary-font:"Poppins", serif;
+    --font-size:16px;
+}
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: var(--default-font) !important;
+    font-size: var(--font-size) !important;
+    height: 100%;
+    
+}
+.title-f{
+    font-family: "Orbitron", sans-serif;
+    font-size: 32px;
+}
+.bg-primary{
+    background-color:var(--primary-color);
+}
+.bg-secondary{
+    background-color:var(--secondary-color);
+}
+.bg-gradient{
+    background:var(--primary-gradient);
+}
+.container{
+    margin: auto !important;
+}
+/* Banner CSS */
+.banner-slick .slick-next{
+    right: 35px;
+    z-index: 1;
+}
+.banner-slick .slick-prev{
+    left: 35px;
+    z-index: 1;
+}
+/* banner form css */
+
+.form-input-fm input:focus{
+    outline: none;
+}
+.form-input-fm input{
+    padding: 5px;
+    background-color: transparent;
+}
+.form-input-fm{
+    border: 1px solid rgba(93, 93, 93, 0.626);
+    display: block;
+    border-radius: 6px;
+}
+.form-input-fm select{
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+.form-input-fm select:focus{
+    outline: none;
+}
+.form-input-fm select option{
+    background-color: #fff;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
