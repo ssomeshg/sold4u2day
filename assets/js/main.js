@@ -1,39 +1,26 @@
 
 
-// Preloader
-let PreloaderDiv = document.getElementById("preloader");
-window.onload = () => {
-    setTimeout(()=>{
-        PreloaderDiv.classList.add("hidden-load")
-    },2000)
-};
+// Login After Navbar
 
-// Sub menu
+let itemTopbar = document.querySelectorAll('.loginNav')
+let loginAuthBtn =  document.querySelector('.loginAuth')
+let topBar = document.getElementById('topbar')
+let authBtn = document.querySelector('.auth-buttons')
+let customerAccountLogin = document.getElementById('customerAccountLogin')
 
-let subMenu = document.querySelectorAll('.submenu')
+let customerLogin =  false;
 
-subMenu.forEach(item =>{
-item.addEventListener('click',()=>{
-    item.classList.toggle('active')
-})
-})
-
-// menu bar
-
-let menuBtn = document.getElementById('menuBtn')
-let sideMenu = document.getElementById('sidemenu')
-let closeMenu = document.querySelectorAll('.close-menu')
-let menuOverlay = document.getElementById('menu-overlay')
-
-menuBtn.addEventListener('click',()=>{
-    sideMenu.style.right = 0
-    menuOverlay.classList.remove('hidden')
-
-})
-closeMenu.forEach(item=>{
-    item.addEventListener('click',()=>{
-        sideMenu.style.right = '-700px'
-        menuOverlay.classList.add('hidden')
-    
+loginAuthBtn.addEventListener('click',(e)=>{
+    itemTopbar.forEach((item)=>{
+        console.log(item);
+        item.classList.remove('hidden')
+        
     })
+    topBar.classList.add('bg-gradient-p')
+    topBar.classList.remove('bg-primary')
+
+    customerAccountLogin.classList.remove('hidden')
+    authBtn.classList.add('lg:hidden')
+
+    e.preventDefault()
 })

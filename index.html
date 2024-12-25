@@ -29,7 +29,7 @@
 <body>
 
   <!--===== TopBar  =====-->
-  <nav class="bg-primary py-3">
+  <nav id="topbar" class="bg-primary py-3">
     <div class="container mx-auto">
       <div class="row">
         <div class="col-md-12">
@@ -41,6 +41,9 @@
                 <a class="text-sm text-white " href="tel:">Tel: 020 8200 8222</a>
             </div>
               
+           <div class="flex gap-4 items-center">
+            <a href="" class="loginNav text-sm text-white hidden">Suport</a>
+            <a href="" class="loginNav text-sm text-white hidden">Contact Sales</a> 
             <div class="top-date flex items-center gap-2">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.93262 5.87754H13.0726" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -56,6 +59,7 @@
                 </svg>
                 <a class="text-sm text-white " href="">Upcoming Auction: View Lots</a>
             </div>
+           </div>
           </div>
         </div>
       </div>
@@ -83,10 +87,19 @@
                 <li><a href="" class="block text-sm" style="line-height: 5.5rem;">About Us</a></li>
               </ul>
             </div>
-            <div class="text-white hidden lg:flex lg:items-center gap-5 ">
-              <a href="" class="text-sm bg-white font-medium px-4 py-2"  style="color: var(--primary-color); box-shadow: var(--primary-color) 4px 4px 0px;">Request vaulation</a>
-              <a href="" class="flex gap-2 items-center text-sm">Login <img src="./assets/img/icon/arrow.svg" alt=""></a>
+            <div class="text-white hidden lg:flex lg:items-center gap-4 auth-buttons">
+              <a href="" class="text-sm bg-white font-medium px-4 py-2 rounded-xl"  style="color: var(--primary-color); box-shadow: var(--primary-color) 4px 4px 0px;">Request vaulation</a>
+              <div class="relative nav-menu" >
+                <a href="" class="loginAuth flex gap-2 items-center text-sm " style="line-height: 5.5rem;">Login <img src="./assets/img/icon/arrow.svg" alt="" ></a>
+                <div class="login-submenu absolute -bottom-10 right-0 min-w-max bg-white text-black px-2 transform translate-y-14 border-1 border-gray-500">
+                  <a href='' class="py-3 border-b  px-4 flex gap-3 font-medium"><img src="./assets/img/icon/c-login.svg" alt="">Customer Login</a>
+                  <a href='' class="py-3 border-b  px-4 flex gap-3 font-medium"><img src="./assets/img/icon/a-login.svg" alt="">Agent & Seller Login</a>
+              </div>
+              </div>
             </div>
+            
+              <a href="" class="flex gap-2 items-center text-sm text-white hidden" id="customerAccountLogin"><img src="./assets/img/icon/profile.svg" alt=""> Account <img src="./assets/img/icon/arrow.svg" alt=""></a>
+            
             <div class="block lg:hidden">
               <a href="" class="text-white">
                 <i class="fa-solid fa-bars"></i>
