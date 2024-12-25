@@ -24,3 +24,37 @@ loginAuthBtn.addEventListener('click',(e)=>{
 
     e.preventDefault()
 })
+document.addEventListener("DOMContentLoaded", () => {
+    const teamScroll = document.querySelector(".team-scroll");
+  
+    const cloneItems = () => {
+      const items = Array.from(teamScroll.children);
+      const totalWidth = items.reduce((acc, item) => acc + item.offsetWidth, 0);
+      const visibleWidth = teamScroll.parentElement.offsetWidth;
+  
+      if (totalWidth < visibleWidth * 2) {
+        items.forEach((item) => {
+          const clone = item.cloneNode(true);
+          teamScroll.appendChild(clone);
+        });
+        cloneItems(); 
+      }
+    };
+  
+    cloneItems();
+  
+    let scrollPosition = 0;
+    const scrollSpeed = 1; 
+  
+    const scrollMarquee = () => {
+      scrollPosition -= scrollSpeed;
+      if (Math.abs(scrollPosition) >= teamScroll.scrollWidth / 2) {
+        scrollPosition = 0;
+      }
+      teamScroll.style.transform = `translateX(${scrollPosition}px)`;
+      requestAnimationFrame(scrollMarquee);
+    };
+  
+    scrollMarquee();
+  });
+  

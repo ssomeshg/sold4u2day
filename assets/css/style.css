@@ -86,4 +86,25 @@ body{
     visibility: hidden;
     transition: 0.2s all ease-in;
     transform: translateY(-50px);
-}
+}.marquee {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    height: 50px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .team-scroll {
+    display: flex;
+    gap: 20px; /* Adjust spacing between items */
+    will-change: transform;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
