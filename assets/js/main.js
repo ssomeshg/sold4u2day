@@ -24,6 +24,8 @@ loginAuthBtn.addEventListener('click',(e)=>{
 
     e.preventDefault()
 })
+
+// logo marquee
 document.addEventListener("DOMContentLoaded", () => {
     const teamScroll = document.querySelector(".team-scroll");
   
@@ -57,4 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
   
     scrollMarquee();
   });
+  
+//   Youtube Video JS
+
+function playVideo(thumbnail) {
+    const videoDiv = thumbnail.nextElementSibling;
+    const thumbnailDiv = thumbnail;
+  
+    // Show the iframe video and hide the thumbnail
+    videoDiv.style.display = "block";
+    thumbnailDiv.style.display = "none";
+  }
   
