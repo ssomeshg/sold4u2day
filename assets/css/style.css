@@ -67,7 +67,7 @@ p{
     width: 100%;
 }
 .banner-slick .slick-next{
-    right: 35px;
+    right: 90px;
     z-index: 1;
 }
 .banner-slick .slick-prev{
@@ -81,6 +81,9 @@ p{
 .banner-content p{
     font-family: var(--secondary-font);
     text-shadow: 0 0 10px black;
+}
+.auction-view-btn:hover{
+    color: #fff !important; 
 }
 /* banner form css */
 
@@ -144,7 +147,7 @@ select{
 }.marquee {
     overflow: hidden;
     background-color: var(--primary-color);
-    height: 50px; 
+    height: 75px; 
     display: flex;
     align-items: center;
     position: relative;
@@ -173,7 +176,21 @@ select{
   }
 
   /* properties Css */
-
+  .property-img img{
+    position: relative;
+    min-height: 250px;
+    object-fit: cover;
+  }
+  .property-img::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(360deg, #000,transparent);
+    z-index: 20;
+  }
   .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
     border: 1px solid var(--primary-color) !important;
     background-color: var(--primary-color) !important;
