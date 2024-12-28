@@ -46,8 +46,14 @@ p{
 .grey-bg{
     background-color: #EFECEC ;
 }
+.bg-grey{
+    background-color: #EEF1F9;
+}
 .container{
     margin: auto !important;
+}
+.grey-text{
+    color: #5B6A84;
 }
 /* Banner CSS */
 .banner{
@@ -205,4 +211,23 @@ select{
   .nav-tabs .nav-link:hover{
     background-color: var(--primary-color)!important;
     color: #fff !important;
+  }
+
+  /* Event Auction CSS */
+
+  .auction-date{
+    border-left: 10px solid var(--primary-color);
+    background-color: #FDE0D7;
+    color: var(--primary-color);
+  }
+
+  .auction-link{
+    color:#5B6A84 !important;
+    width: 100%;
+  }
+ 
+
+  .nav-pills .auction-link.active, .nav-pills .show > .auction-link{
+    background-color: #fff !important;
+    color: var(--primary-color) !important;
   }
