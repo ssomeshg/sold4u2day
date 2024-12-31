@@ -25,7 +25,29 @@
    
      <!-- Fontawesome 6 -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <style>
+        
+       .property-slick .slick-prev:before {
+           content: '';
+           display: block;
+           width: 20px; 
+           height: 20px; 
+           background-image: url('./assets/img/icon/prev.svg');
+           background-size: contain;
+           background-repeat: no-repeat;
+           background-position: center;
+       }
+       .property-slick .slick-next:before {
+           content: '';
+           display: block;
+           width: 20px; 
+           height: 20px; 
+           background-image: url('./assets/img/icon/next.svg');
+           background-size: contain;
+           background-repeat: no-repeat;
+           background-position: center;
+       }
+    </style>
 
 </head>
 <body>
@@ -366,14 +388,14 @@
 
                 <!-- side links -->
                 <div class="mt-10 flex flex-col gap-3">
-                    <div class="pack-box rounded-lg d-box-1 flex justify-between px-3">
+                    <div class="pack-box rounded-lg d-box-1 flex justify-between px-3" style="background-image: url('./assets/img/p-1.png');">
                         <div class="overley-pack"></div>
                         <div class="w-100 text-white z-20 flex justify-between items-center">
                             <p class="text-sm font-medium mb-0">Download Legal Pack</p>
                         <img src="./assets/img/icon/Download-Brochure.svg" alt="" class="w-7 h-7">
                         </div>
                     </div>
-                    <div class="pack-box rounded-lg d-box-2 flex justify-between px-3">
+                    <div class="pack-box rounded-lg d-box-2 flex justify-between px-3" style="background-image: url('./assets/img/p-2.png');">
                         <div class="overley-pack"></div>
                         <div class="w-100 text-white z-20 flex justify-between items-center">
                             <p class="text-sm font-medium mb-0">Bidding Guidelines</p>
