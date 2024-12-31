@@ -71,3 +71,11 @@ function playVideo(thumbnail) {
     thumbnailDiv.style.display = "none";
   }
   
+  // c
+
+  const bannerSlick = document.querySelector('.banner-slick')
+
+  console.log('++')
+  console.log(bannerSlick);
+  console.log('++')
+  

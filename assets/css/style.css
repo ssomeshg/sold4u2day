@@ -12,6 +12,7 @@
     --default-font:"Inter", serif;
     --secondary-font:"Poppins", serif;
     --font-size:16px;
+    --prev-icon: assets\img\icon\arrow.svg;
 }
 html, body {
     height: 100%;
@@ -90,6 +91,14 @@ p{
 }
 .auction-view-btn:hover{
     color: #fff !important; 
+}
+
+.auction-div:hover .auction-date-col{
+    background-color: #000 !important;
+    
+}
+.auction-div:hover .auction-date-col p{
+    color: #fff !important;    
 }
 /* banner form css */
 
@@ -350,4 +359,274 @@ select{
 .clip-counter p{
     font-size: 9px;
     line-height: 9px;
+}
+
+/* property Detail page css */
+
+.property-live{
+    background-color: #DCF4E0; 
+    color: #48A956; 
+    font-family: var(--secondary-font);
+    max-width: fit-content;
+}
+
+.property-image{
+    min-height:520px;
+    overflow: hidden;
+    width: 100%;
+    max-height: 520px;
+}
+.property-image img{
+    min-height:520px;
+    
+}
+.property-image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(360deg, #000,transparent);
+    z-index: 20;
+}
+.slick-count{
+    background-color: #ffe8dd68;
+
+}
+.property-slick .slick-prev{
+    left: 25px !important;
+    z-index: 40;
+}
+.property-slick .slick-next{
+    right: 25px !important;
+    z-index: 40;
+}
+.property-slick .slick-prev:before {
+    content: '';
+    display: block;
+    width: 20px; 
+    height: 20px; 
+    background-image: url('/assets/img/icon/prev.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.property-slick .slick-next:before {
+    content: '';
+    display: block;
+    width: 20px; 
+    height: 20px; 
+    background-image: url('/assets/img/icon/next.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.property-slick .slick-next{
+    background-color: #ffe8dd68;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.property-slick .slick-prev{
+    background-color: #ffe8dd68;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.property-slick .slick-prev:hover{
+    background-color: #ffe8dd68 !important;
+}
+.property-slick .slick-next:hover{
+    background-color: #ffe8dd68 !important;
+}
+
+.facilities-bar{
+    color: #435572 !important;
+}
+
+.property-details-buttons ul li a{
+    display: block;
+    font-family: var(--secondary-font);
+    color: #435572;
+    min-width: max-content;
+    position: relative;
+}
+.property-details-buttons ul li a.active{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    font-family: var(--secondary-font);
+    min-width: max-content;
+    position: relative;
+    overflow: hidden;
+}
+.property-details-buttons ul li a.active::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    border-radius: 100px;
+}
+.box-show{
+    background-color: #FFFFFF;
+    border: 1px solid #C8CDD6;
+    border-radius: 10px;
+    padding: 10px;
+    color: #343F4F ;
+}
+.box-show p{
+    color: #343F4F !important;
+}
+.p-view p a{
+    color: var(--primary-color);
+}
+
+.spec-list ul li{
+    font-size: 14px;
+    font-weight: 400;
+    color: #343F4F;
+}
+.property-price-box{
+    position: relative;
+    min-height: 400px;
+    height: 100%;
+    max-height: min-content;
+    width: 100%;
+    /* box-shadow: 4px 4px 0px var(--primary-color); */
+    /* background-color: var(--primary-color); */
+  }
+  .property-bit-box{
+    min-height: 80%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    border: 2px solid var(--primary-color);
+    border-top: 0;
+    max-height: 80%;
+  }
+  .property-bit {
+    min-height: 20%;
+    width: 70%;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 2px solid var(--primary-color);
+    border-bottom: 0;
+}
+.property-price-box::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    top: 15%;
+    left: 25%;
+    border-radius: 100px;
+    box-shadow: 10px 8px 0 #fff;
+    z-index: 10;
+}
+.clip-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 10px;
+    left: 8px;
+    top: 8px;
+
+}
+.property-input{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(243, 114, 41, 0.2) ;
+}
+.property-input input{
+    width: 80%;
+}
+.property-input a{
+    width: 20%;
+}
+.property-binding{
+    border: 1px solid #ff464624;
+    background: linear-gradient(88deg, #ff5c0033, #FFFFFF);
+    border-radius: 10px;
+    padding: 10px;
+}
+.property-binding p{
+    color: #435572;
+}
+ 
+.pack-box{
+    min-height:70px;
+    height: 70px;
+    width: 100%;
+    font-family: var(--secondary-font) !important;
+}
+.d-box-1{
+    background-image: url('/assets/img/p-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.d-box-2{
+    background-image: url('/assets/img/p-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.d-box-g{
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.504);
+    overflow: hidden;
+    color: #000;
+}
+.d-box-g.active{
+    color:var(--primary-color)!important;
+    border: 1px solid var(--primary-color);
+
+}
+.d-box-g::after{
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    background: linear-gradient(88deg, #ff5e0061, #ff5e000d);
+    border-radius: 200px;
+    right: -33px;
+    top: -13px;
+    border: 1px solid #ff464624
+}
+.overley-pack{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b0;
+    z-index: 10;
 }
