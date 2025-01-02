@@ -174,7 +174,7 @@
     </div>
   </section>
   <!--===== Live Auction Lots  =====-->
-  
+
   <!--=====  Lots Items  =====-->
   <section class="">
     <div class="container">
@@ -182,131 +182,369 @@
         <div class="row pb-4">
             <div class="col-md-10">
                 <div class="live-auction-times">
-                    <ul class="auction-items p-0 flex gap-2 overflow-x-scroll mb-0">
-                        <li class="auction-time active text-sm font-medium flex gap-2 items-center px-3 py-1">10:45 AM - 11:45 AM <span class="bg-black text-white px-3 py-1 rounded-full font-semibold">20 Properties</span><span><img src="./assets/img/icon/cross.svg" alt=""></span></li>
-                        <li class="auction-time text-sm font-medium flex gap-2 items-center px-3 py-1">10:45 AM - 11:45 AM </li>
-                        <li class="auction-time text-sm font-medium flex gap-2 items-center px-3 py-1">10:45 AM - 11:45 AM </li>
-                        <li class="auction-time text-sm font-medium flex gap-2 items-center px-3 py-1">10:45 AM - 11:45 AM </li>
-                        <li class="auction-time text-sm font-medium flex gap-2 items-center px-3 py-1">10:45 AM - 11:45 AM </li>
+                    <ul class="auction-items nav nav-tabs p-0 flex gap-2 overflow-x-scroll mb-0 border-0" id="myTab" role="tablist">
+                        <li class="auction-time active text-sm font-medium flex gap-2 items-center px-3 py-1"  id="available-tab" data-bs-toggle="pill" data-bs-target="#available" type="button" role="tab" aria-controls="available" aria-selected="true">10:45 AM - 11:45 AM <span class="bg-black text-white px-3 py-1 rounded-full font-semibold">20 Properties</span><span><img src="./assets/img/icon/cross.svg" alt=""></span></li>
+                        <li class="auction-time text-sm font-medium flex gap-2 items-center px-3 py-1" id="sold-tab" data-bs-toggle="pill" data-bs-target="#sold" type="button" role="tab" aria-controls="sold" aria-selected="false">10:45 AM - 11:45 AM </li>
+                        <li class="auction-time text-sm font-medium flex gap-2 items-center px-3 py-1" id="sold-tab" data-bs-toggle="pill" data-bs-target="#sold" type="button" role="tab" aria-controls="sold" aria-selected="false">10:45 AM - 11:45 AM </li>
+                        <li class="auction-time text-sm font-medium flex gap-2 items-center px-3 py-1" id="sold-tab" data-bs-toggle="pill" data-bs-target="#sold" type="button" role="tab" aria-controls="sold" aria-selected="false">10:45 AM - 11:45 AM </li>
+                        <li class="auction-time text-sm font-medium flex gap-2 items-center px-3 py-1" id="sold-tab" data-bs-toggle="pill" data-bs-target="#sold" type="button" role="tab" aria-controls="sold" aria-selected="false">10:45 AM - 11:45 AM </li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-2 py-4 lg:py-0">
-                <div class="auction-filter flex gap-3 justify-end items-center my-auto">
-                    <a href=""><img src="./assets/img/icon/Filter.svg" class="w-5" alt=""></a>
+                <div class="auction-filter flex gap-3 justify-end items-center my-auto relative">
+                    <div class="sort-option relative">
+                        <a class="sort-nav"><img src="./assets/img/icon/Filter.svg" class="w-5" alt=""></a>
+                        <div class="sort-item absolute top-5">
+                            <div class=""><a href="">Name</a></div>
+                            <div class=""><a href="">Type</a></div>
+                            <div class=""><a href="">Time</a></div>
+                        </div>
+                    </div>
                     <a href=""><img src="./assets/img/icon/Filter-3.svg" class="w-5" alt=""></a>
                 </div>
             </div>
         </div>
         <!-- Lots Item Starts -->
-         <div class="row border rounded-xl mb-3">
-            <div class="col-lg-3 p-0">
-                <div class="lot-img relative overflow-hidden h-100">
-                    <img src="./assets/img/live-property/lot-1.svg" alt="" class="w-100 h-100 rounded-xl">
-                    <div class="lot-wishlist absolute top-0 flex justify-between items-center w-100 p-3 z-20">
-                        <a href="" class=" bg-white place-content-center text-xs font-bold py-2 px-3 rounded-md">For Sale</a>
-                        <a href="" class="bg-white w-10 h-10 rounded-full text-black flex items-center justify-center"><i class="fa-solid fa-heart" class="text-transparent"></i></a>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="available" role="tabpanel" aria-labelledby="available-tab">
+                <div class="row mb-3 px-3">
+                    <div class="lg:flex border rounded-xl p-0">
+                      <div class="col-lg-3 p-0">
+                          <div class="lot-img relative overflow-hidden h-100">
+                              <img src="./assets/img/live-property/lot-1.svg" alt="" class="w-100 h-100 rounded-xl">
+                              <div class="lot-wishlist absolute top-0 flex justify-between items-center w-100 p-3 z-20">
+                                  <a href="" class=" bg-white place-content-center text-xs font-bold py-2 px-3 rounded-md">For Sale</a>
+                                  <a href="" class="bg-white w-10 h-10 rounded-full text-black flex items-center justify-center"><i class="fa-solid fa-heart" class="text-transparent"></i></a>
+                              </div>
+                              <div class="absolute bottom-5 w-100 z-20 text-center text-white">
+                                  <p class="text-2xl font-semibold uppercase">Lot 1</p>
+                              </div>
+                              <div>
+          
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 px-3 py-4">
+                          <div class="grid gap-3 border-b border-opacity-60 pb-10">
+                              <div class="flex justify-between items-center">
+                                  <div class="flex items-center gap-2">
+                                      <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max flex gap-1 items-center"><img src="./assets/img/icon/garage.svg" alt="">Apartment</a>
+                                      <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max">Modern Method</a>
+                                  </div>
+                                  <span class="w-2 h-2 bg-green-500 rounded-full block"></span>
+                              </div>
+                              <h3 class="text-2xl font-semibold mb-0">Commercial Property for Sale</h3>
+                              <div class="text-base font-medium text-black-400 flex item-center gap-1">
+                                  <img src="./assets/img/icon/location-1.svg" class="" alt="">  Neal's Yard , Covent Garden , Province London WC2H 9LD
+                              </div>  
+                              <div  class="flex flex-wrap gap-2 items-center">
+                                  <div class="flex items-center gap-1 pr-2 border-r ">
+                                    <img src="./assets/img/icon/bed-double.svg" class="w-4" alt="">
+                                    <p class="mb-0 text-sm font-normal">4 Beds</p>
+                                  </div>
+                                  
+                                  <div class="flex items-center gap-1 pr-2 border-r">
+                                    <img src="./assets/img/icon/bath.svg" class="w-5" alt="">
+                                    <p class="mb-0 text-sm font-normal">2 Bathrooms</p>
+                                  </div>
+                                  <div class="flex items-center gap-1 pr-2 border-r">
+                                    <img src="./assets/img/icon/feet-sq.svg" class="w-5" alt="">
+                                    <p class="mb-0 text-sm font-normal">1200 sq ft</p>
+                                  </div>
+                                </div>              
+                          </div>
+                          <div class="flex justify-between pt-8">
+                              <div class="flex gap-2 items-center">
+                                  <img src="./assets/img/icon/Calendar.svg" alt="" class="w-5 h-5">
+                                  <p class="mb-0 text-base font-semibold min-w-max">07 Nov 2024 ,5:00 PM</p>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                  <p class="mb-0 grey-text text-xs">Posted by</p>
+                                  <a href="" class="flex gap-2 p-2 items-center bg-white text-sm font-medium shadow-md border border-opacity-80 rounded-full "><img src="./assets/img/icon/gps-link.svg" alt="">GPS Link</a>
+                              </div>
+                          </div>
+          
+                      </div>
+                      <div class="col-lg-3 p-3">
+                          <!-- <div class="relative bg-no-repeat bg-cover" style="background-image: url(./assets/img/clip-box.svg);">
+                              <div class=" top-0 z-10">
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam odit, voluptatem eligendi ipsam sint quas laborum quos dignissimos! Porro fugit reprehenderit omnis similique esse sed illum magni modi ipsam id. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem tempora repudiandae quod ad, et nulla voluptates ullam quibusdam quae eos, sed natus excepturi nostrum eaque quos dolorem obcaecati ducimus?
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sequi, nesciunt error laboriosam odit laborum accusamus dignissimos exercitationem nihil aliquid possimus nisi voluptas dicta nemo optio maxime esse doloribus enim.
+                              </div>
+                          </div> -->
+                          <div class="lot-price-box">
+                              <div class="clip-bg flex justify-end">
+                                  <div class="clip-counter text-center p-1 px-3">
+                                      <p class="text-white mb-1 ">Bidding Ends in</p>
+                                      <div class="flex gap-3 text-white">
+                                          <div class="counter-fn">
+                                              <h4 class="counter font-light mb-0">2</h4>
+                                              <p class="text-xs">Days</p>
+                                          </div>
+                                          <div class="counter-fn">
+                                              <h4 class="counter font-light mb-0">06</h4>
+                                              <p class="text-xs">Hours</p>
+                                          </div>
+                                          <div class="counter-fn">
+                                              <h4 class="counter font-light mb-0">15</h4>
+                                              <p class="text-xs">Minutes</p>
+                                          </div>
+                                          <div class="">
+                                              <h4 class="counter font-light mb-0">23</h4>
+                                              <p class="text-xs">Seconds</p>
+                                          </div>
+          
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="clip-path"></div>
+                              <div class="clip-box p-3 grid justify-end">
+                                  <ul class="grid gap-3 justify-end">
+                                      <li class="text-sm font-medium grey-text text-end">Starting Bid   <span class="text-base font-bold ml-2">$78390</span></li>
+                                      <li class="text-sm font-medium grey-text text-end">Highest Bid    <span class="text-base font-bold ml-2">$78390</span></li>
+                                      <li class="text-sm font-medium grey-text text-end">Your Last Bid  <span class="text-base font-bold ml-2">$78390</span></li>
+                                  </ul>
+                                  <div class="clip-input items-center rounded-full p-2 px-3 mb-2">
+                                      <input type="text" class="text-sm font-medium bg-transparent focus:outline-none" placeholder="Enter amount" >
+                                      <a href="" class="min-w-max px-3 py-1 text-xs font-medium bg-black flex justify-center items-center rounded-full text-white">Bid Now</a>
+                                  </div>
+                                  <div>
+                                      <a href="" class="flex justify-end items-center gap-1 text-sm font-bold"><img src="./assets/img/icon/Show.svg" alt=""> 80 Watchlist</a>
+                                  </div>
+                              </div>
+                             
+                          </div>
+                      </div>
                     </div>
-                    <div class="absolute bottom-5 w-100 z-20 text-center text-white">
-                        <p class="text-2xl font-semibold uppercase">Lot 1</p>
-                    </div>
-                    <div>
-
-                    </div>
-                </div>
+                   </div> 
             </div>
-            <div class="col-lg-6 px-3 py-8">
-                <div class="grid gap-4 border-b border-opacity-60 pb-10">
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max flex gap-1 items-center"><img src="./assets/img/icon/garage.svg" alt="">Apartment</a>
-                            <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max">Modern Method</a>
-                        </div>
-                        <span class="w-2 h-2 bg-green-500 rounded-full block"></span>
+            <div class="tab-pane fade show" id="sold" role="tabpanel" aria-labelledby="available-tab">
+                <div class="row mb-3 px-3">
+                    <div class="lg:flex border rounded-xl p-0">
+                      <div class="col-lg-3 p-0">
+                          <div class="lot-img relative overflow-hidden h-100">
+                              <img src="./assets/img/live-property/lot-1.svg" alt="" class="w-100 h-100 rounded-xl">
+                              <div class="lot-wishlist absolute top-0 flex justify-between items-center w-100 p-3 z-20">
+                                  <a href="" class=" bg-white place-content-center text-xs font-bold py-2 px-3 rounded-md">For Sale</a>
+                                  <a href="" class="bg-white w-10 h-10 rounded-full text-black flex items-center justify-center"><i class="fa-solid fa-heart" class="text-transparent"></i></a>
+                              </div>
+                              <div class="absolute bottom-5 w-100 z-20 text-center text-white">
+                                  <p class="text-2xl font-semibold uppercase">Lot 1</p>
+                              </div>
+                              <div>
+          
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 px-3 py-4">
+                          <div class="grid gap-3 border-b border-opacity-60 pb-10">
+                              <div class="flex justify-between items-center">
+                                  <div class="flex items-center gap-2">
+                                      <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max flex gap-1 items-center"><img src="./assets/img/icon/garage.svg" alt="">Apartment</a>
+                                      <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max">Modern Method</a>
+                                  </div>
+                                  <span class="w-2 h-2 bg-green-500 rounded-full block"></span>
+                              </div>
+                              <h3 class="text-2xl font-semibold mb-0">Commercial Property for Sale</h3>
+                              <div class="text-base font-medium text-black-400 flex item-center gap-1">
+                                  <img src="./assets/img/icon/location-1.svg" class="" alt="">  Neal's Yard , Covent Garden , Province London WC2H 9LD
+                              </div>  
+                              <div  class="flex flex-wrap gap-2 items-center">
+                                  <div class="flex items-center gap-1 pr-2 border-r ">
+                                    <img src="./assets/img/icon/bed-double.svg" class="w-4" alt="">
+                                    <p class="mb-0 text-sm font-normal">4 Beds</p>
+                                  </div>
+                                  
+                                  <div class="flex items-center gap-1 pr-2 border-r">
+                                    <img src="./assets/img/icon/bath.svg" class="w-5" alt="">
+                                    <p class="mb-0 text-sm font-normal">2 Bathrooms</p>
+                                  </div>
+                                  <div class="flex items-center gap-1 pr-2 border-r">
+                                    <img src="./assets/img/icon/feet-sq.svg" class="w-5" alt="">
+                                    <p class="mb-0 text-sm font-normal">1200 sq ft</p>
+                                  </div>
+                                </div>              
+                          </div>
+                          <div class="flex justify-between pt-8">
+                              <div class="flex gap-2 items-center">
+                                  <img src="./assets/img/icon/Calendar.svg" alt="" class="w-5 h-5">
+                                  <p class="mb-0 text-base font-semibold min-w-max">07 Nov 2024 ,5:00 PM</p>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                  <p class="mb-0 grey-text text-xs">Posted by</p>
+                                  <a href="" class="flex gap-2 p-2 items-center bg-white text-sm font-medium shadow-md border border-opacity-80 rounded-full "><img src="./assets/img/icon/gps-link.svg" alt="">GPS Link</a>
+                              </div>
+                          </div>
+          
+                      </div>
+                      <div class="col-lg-3 p-3">
+                          <!-- <div class="relative bg-no-repeat bg-cover" style="background-image: url(./assets/img/clip-box.svg);">
+                              <div class=" top-0 z-10">
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam odit, voluptatem eligendi ipsam sint quas laborum quos dignissimos! Porro fugit reprehenderit omnis similique esse sed illum magni modi ipsam id. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem tempora repudiandae quod ad, et nulla voluptates ullam quibusdam quae eos, sed natus excepturi nostrum eaque quos dolorem obcaecati ducimus?
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sequi, nesciunt error laboriosam odit laborum accusamus dignissimos exercitationem nihil aliquid possimus nisi voluptas dicta nemo optio maxime esse doloribus enim.
+                              </div>
+                          </div> -->
+                          <div class="lot-price-box">
+                              <div class="clip-bg flex justify-end">
+                                  <div class="clip-counter text-center p-1 px-3">
+                                      <p class="text-white mb-1 ">Bidding Ends in</p>
+                                      <div class="flex gap-3 text-white">
+                                          <div class="counter-fn">
+                                              <h4 class="counter font-light mb-0">2</h4>
+                                              <p class="text-xs">Days</p>
+                                          </div>
+                                          <div class="counter-fn">
+                                              <h4 class="counter font-light mb-0">06</h4>
+                                              <p class="text-xs">Hours</p>
+                                          </div>
+                                          <div class="counter-fn">
+                                              <h4 class="counter font-light mb-0">15</h4>
+                                              <p class="text-xs">Minutes</p>
+                                          </div>
+                                          <div class="">
+                                              <h4 class="counter font-light mb-0">23</h4>
+                                              <p class="text-xs">Seconds</p>
+                                          </div>
+          
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="clip-path"></div>
+                              <div class="clip-box p-3 grid justify-end">
+                                  <ul class="grid gap-3 justify-end">
+                                      <li class="text-sm font-medium grey-text text-end">Starting Bid   <span class="text-base font-bold ml-2">$78390</span></li>
+                                      <li class="text-sm font-medium grey-text text-end">Highest Bid    <span class="text-base font-bold ml-2">$78390</span></li>
+                                      <li class="text-sm font-medium grey-text text-end">Your Last Bid  <span class="text-base font-bold ml-2">$78390</span></li>
+                                  </ul>
+                                  <div class="clip-input items-center rounded-full p-2 px-3 mb-2">
+                                      <input type="text" class="text-sm font-medium bg-transparent focus:outline-none" placeholder="Enter amount" >
+                                      <a href="" class="min-w-max px-3 py-1 text-xs font-medium bg-black flex justify-center items-center rounded-full text-white">Bid Now</a>
+                                  </div>
+                                  <div>
+                                      <a href="" class="flex justify-end items-center gap-1 text-sm font-bold"><img src="./assets/img/icon/Show.svg" alt=""> 80 Watchlist</a>
+                                  </div>
+                              </div>
+                             
+                          </div>
+                      </div>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-0">Commercial Property for Sale</h3>
-                    <div class="text-base font-medium text-black-400 flex item-center gap-1">
-                        <img src="./assets/img/icon/location-1.svg" class="" alt="">  Neal's Yard , Covent Garden , Province London WC2H 9LD
-                    </div>  
-                    <div  class="flex flex-wrap gap-2 items-center">
-                        <div class="flex items-center gap-1 pr-2 border-r ">
-                          <img src="./assets/img/icon/bed-double.svg" class="w-4" alt="">
-                          <p class="mb-0 text-sm font-normal">4 Beds</p>
-                        </div>
-                        
-                        <div class="flex items-center gap-1 pr-2 border-r">
-                          <img src="./assets/img/icon/bath.svg" class="w-5" alt="">
-                          <p class="mb-0 text-sm font-normal">2 Bathrooms</p>
-                        </div>
-                        <div class="flex items-center gap-1 pr-2 border-r">
-                          <img src="./assets/img/icon/feet-sq.svg" class="w-5" alt="">
-                          <p class="mb-0 text-sm font-normal">1200 sq ft</p>
-                        </div>
-                      </div>              
-                </div>
-                <div class="flex justify-between pt-8">
-                    <div class="flex gap-2 items-center">
-                        <img src="./assets/img/icon/Calendar.svg" alt="" class="w-5 h-5">
-                        <p class="mb-0 text-base font-semibold min-w-max">07 Nov 2024 ,5:00 PM</p>
-                    </div>
-                    <div class="flex gap-2 items-center">
-                        <p class="mb-0 grey-text text-xs">Posted by</p>
-                        <a href="" class="flex gap-2 p-2 items-center bg-white text-sm font-medium shadow-md border border-opacity-80 rounded-full "><img src="./assets/img/icon/gps-link.svg" alt="">GPS Link</a>
-                    </div>
-                </div>
-
+                   </div> 
             </div>
-            <div class="col-lg-3 p-3">
-                <!-- <div class="relative bg-no-repeat bg-cover" style="background-image: url(./assets/img/clip-box.svg);">
-                    <div class=" top-0 z-10">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam odit, voluptatem eligendi ipsam sint quas laborum quos dignissimos! Porro fugit reprehenderit omnis similique esse sed illum magni modi ipsam id. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem tempora repudiandae quod ad, et nulla voluptates ullam quibusdam quae eos, sed natus excepturi nostrum eaque quos dolorem obcaecati ducimus?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sequi, nesciunt error laboriosam odit laborum accusamus dignissimos exercitationem nihil aliquid possimus nisi voluptas dicta nemo optio maxime esse doloribus enim.
+            <div class="tab-pane fade show" id="sold" role="tabpanel" aria-labelledby="available-tab">
+                <div class="row mb-3 px-3">
+                    <div class="lg:flex border rounded-xl p-0">
+                      <div class="col-lg-3 p-0">
+                          <div class="lot-img relative overflow-hidden h-100">
+                              <img src="./assets/img/live-property/lot-1.svg" alt="" class="w-100 h-100 rounded-xl">
+                              <div class="lot-wishlist absolute top-0 flex justify-between items-center w-100 p-3 z-20">
+                                  <a href="" class=" bg-white place-content-center text-xs font-bold py-2 px-3 rounded-md">For Sale</a>
+                                  <a href="" class="bg-white w-10 h-10 rounded-full text-black flex items-center justify-center"><i class="fa-solid fa-heart" class="text-transparent"></i></a>
+                              </div>
+                              <div class="absolute bottom-5 w-100 z-20 text-center text-white">
+                                  <p class="text-2xl font-semibold uppercase">Lot 1</p>
+                              </div>
+                              <div>
+          
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 px-3 py-4">
+                          <div class="grid gap-3 border-b border-opacity-60 pb-10">
+                              <div class="flex justify-between items-center">
+                                  <div class="flex items-center gap-2">
+                                      <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max flex gap-1 items-center"><img src="./assets/img/icon/garage.svg" alt="">Apartment</a>
+                                      <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max">Modern Method</a>
+                                  </div>
+                                  <span class="w-2 h-2 bg-green-500 rounded-full block"></span>
+                              </div>
+                              <h3 class="text-2xl font-semibold mb-0">Commercial Property for Sale</h3>
+                              <div class="text-base font-medium text-black-400 flex item-center gap-1">
+                                  <img src="./assets/img/icon/location-1.svg" class="" alt="">  Neal's Yard , Covent Garden , Province London WC2H 9LD
+                              </div>  
+                              <div  class="flex flex-wrap gap-2 items-center">
+                                  <div class="flex items-center gap-1 pr-2 border-r ">
+                                    <img src="./assets/img/icon/bed-double.svg" class="w-4" alt="">
+                                    <p class="mb-0 text-sm font-normal">4 Beds</p>
+                                  </div>
+                                  
+                                  <div class="flex items-center gap-1 pr-2 border-r">
+                                    <img src="./assets/img/icon/bath.svg" class="w-5" alt="">
+                                    <p class="mb-0 text-sm font-normal">2 Bathrooms</p>
+                                  </div>
+                                  <div class="flex items-center gap-1 pr-2 border-r">
+                                    <img src="./assets/img/icon/feet-sq.svg" class="w-5" alt="">
+                                    <p class="mb-0 text-sm font-normal">1200 sq ft</p>
+                                  </div>
+                                </div>              
+                          </div>
+                          <div class="flex justify-between pt-8">
+                              <div class="flex gap-2 items-center">
+                                  <img src="./assets/img/icon/Calendar.svg" alt="" class="w-5 h-5">
+                                  <p class="mb-0 text-base font-semibold min-w-max">07 Nov 2024 ,5:00 PM</p>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                  <p class="mb-0 grey-text text-xs">Posted by</p>
+                                  <a href="" class="flex gap-2 p-2 items-center bg-white text-sm font-medium shadow-md border border-opacity-80 rounded-full "><img src="./assets/img/icon/gps-link.svg" alt="">GPS Link</a>
+                              </div>
+                          </div>
+          
+                      </div>
+                      <div class="col-lg-3 p-3">
+                          <!-- <div class="relative bg-no-repeat bg-cover" style="background-image: url(./assets/img/clip-box.svg);">
+                              <div class=" top-0 z-10">
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam odit, voluptatem eligendi ipsam sint quas laborum quos dignissimos! Porro fugit reprehenderit omnis similique esse sed illum magni modi ipsam id. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem tempora repudiandae quod ad, et nulla voluptates ullam quibusdam quae eos, sed natus excepturi nostrum eaque quos dolorem obcaecati ducimus?
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sequi, nesciunt error laboriosam odit laborum accusamus dignissimos exercitationem nihil aliquid possimus nisi voluptas dicta nemo optio maxime esse doloribus enim.
+                              </div>
+                          </div> -->
+                          <div class="lot-price-box">
+                              <div class="clip-bg flex justify-end">
+                                  <div class="clip-counter text-center p-1 px-3">
+                                      <p class="text-white mb-1 ">Bidding Ends in</p>
+                                      <div class="flex gap-3 text-white">
+                                          <div class="counter-fn">
+                                              <h4 class="counter font-light mb-0">2</h4>
+                                              <p class="text-xs">Days</p>
+                                          </div>
+                                          <div class="counter-fn">
+                                              <h4 class="counter font-light mb-0">06</h4>
+                                              <p class="text-xs">Hours</p>
+                                          </div>
+                                          <div class="counter-fn">
+                                              <h4 class="counter font-light mb-0">15</h4>
+                                              <p class="text-xs">Minutes</p>
+                                          </div>
+                                          <div class="">
+                                              <h4 class="counter font-light mb-0">23</h4>
+                                              <p class="text-xs">Seconds</p>
+                                          </div>
+          
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="clip-path"></div>
+                              <div class="clip-box p-3 grid justify-end">
+                                  <ul class="grid gap-3 justify-end">
+                                      <li class="text-sm font-medium grey-text text-end">Starting Bid   <span class="text-base font-bold ml-2">$78390</span></li>
+                                      <li class="text-sm font-medium grey-text text-end">Highest Bid    <span class="text-base font-bold ml-2">$78390</span></li>
+                                      <li class="text-sm font-medium grey-text text-end">Your Last Bid  <span class="text-base font-bold ml-2">$78390</span></li>
+                                  </ul>
+                                  <div class="clip-input items-center rounded-full p-2 px-3 mb-2">
+                                      <input type="text" class="text-sm font-medium bg-transparent focus:outline-none" placeholder="Enter amount" >
+                                      <a href="" class="min-w-max px-3 py-1 text-xs font-medium bg-black flex justify-center items-center rounded-full text-white">Bid Now</a>
+                                  </div>
+                                  <div>
+                                      <a href="" class="flex justify-end items-center gap-1 text-sm font-bold"><img src="./assets/img/icon/Show.svg" alt=""> 80 Watchlist</a>
+                                  </div>
+                              </div>
+                             
+                          </div>
+                      </div>
                     </div>
-                </div> -->
-                <div class="lot-price-box">
-                    <div class="clip-bg flex justify-end">
-                        <div class="clip-counter text-center p-1 px-3">
-                            <p class="text-white mb-1 ">Bidding Ends in</p>
-                            <div class="flex gap-3 text-white">
-                                <div class="counter-fn">
-                                    <h4 class="counter font-light mb-0">2</h4>
-                                    <p class="text-xs">Days</p>
-                                </div>
-                                <div class="counter-fn">
-                                    <h4 class="counter font-light mb-0">06</h4>
-                                    <p class="text-xs">Hours</p>
-                                </div>
-                                <div class="counter-fn">
-                                    <h4 class="counter font-light mb-0">15</h4>
-                                    <p class="text-xs">Minutes</p>
-                                </div>
-                                <div class="">
-                                    <h4 class="counter font-light mb-0">23</h4>
-                                    <p class="text-xs">Seconds</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clip-path"></div>
-                    <div class="clip-box p-3 grid justify-end">
-                        <ul class="grid gap-3 justify-end">
-                            <li class="text-sm font-medium grey-text text-end">Starting Bid   <span class="text-base font-bold ml-2">$78390</span></li>
-                            <li class="text-sm font-medium grey-text text-end">Highest Bid    <span class="text-base font-bold ml-2">$78390</span></li>
-                            <li class="text-sm font-medium grey-text text-end">Your Last Bid  <span class="text-base font-bold ml-2">$78390</span></li>
-                        </ul>
-                        <div class="clip-input items-center rounded-full p-2 px-3 mb-2">
-                            <input type="text" class="text-sm font-medium bg-transparent focus:outline-none" placeholder="Enter amount" >
-                            <a href="" class="min-w-max px-3 py-1 text-xs font-medium bg-black flex justify-center items-center rounded-full text-white">Bid Now</a>
-                        </div>
-                        <div>
-                            <a href="" class="flex justify-end items-center gap-1 text-sm font-bold"><img src="./assets/img/icon/Show.svg" alt=""> 80 Watchlist</a>
-                        </div>
-                    </div>
-                   
-                </div>
+                   </div> 
             </div>
-         </div> 
+        </div>
+       
     </div>
   </section>
   <!--=====  Lots Items  =====-->
