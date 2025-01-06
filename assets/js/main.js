@@ -71,11 +71,43 @@ function playVideo(thumbnail) {
     thumbnailDiv.style.display = "none";
   }
   
-  // c
+// image zoom modal
 
-  const bannerSlick = document.querySelector('.banner-slick')
+// Function to show the modal
+function showModal() {
+  const modal = document.getElementById('modal01');
+  modal.style.display = 'block';
+}
 
-  console.log('++')
-  console.log(bannerSlick);
-  console.log('++')
+// Function to hide the modal
+function hideModal() {
+  const modal = document.getElementById('modal01');
+  modal.style.display = 'none';
+}
+
+// Bid Dropdown 
+
+const bidBtn = document.querySelector('.bid-dropdown-btn');
+const bidDropdown = document.querySelector('.bid-dropdown');
+
+let bidDrop = false;
+
+bidBtn.addEventListener('click', () => {
+  bidDrop = !bidDrop; 
+  console.log(bidDrop);
+  
+  if (bidDrop) {
+    console.log(bidDrop);
+    bidDropdown.classList.remove('hidden');
+    bidDropdown.classList.add('show');
+    bidBtn.classList.add('active')
+  } else {
+    console.log(bidDrop);
+    bidDropdown.classList.remove('show');
+    bidDropdown.classList.add('hidden');
+    bidBtn.classList.remove('active')
+  }
+});
+
+
   
