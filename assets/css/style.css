@@ -747,3 +747,205 @@ select{
     background-color: #000000b0;
     z-index: 10;
 }
+
+/* Register CSS */
+
+.r-content{
+    background-color: rgba(255, 255, 255, 0.17);
+
+}
+.r-icon{
+    background-color: #d9d9d933;
+}
+.r-carousel .r-slick{
+    background-color: rgba(255, 255, 255, 15%);
+    border: 1px solid rgba(255, 255, 255, 34%);
+}
+.form-progress ul {
+    display: flex;
+    padding: 0;
+}
+.form-progress ul li{
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.form-progress ul li .steps-progess{
+    width:20px;
+    height:20px;
+    background-color: #D9D9D9;
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-progress ul li .steps{
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    top: -20px;
+    color: #343f4fc1;
+}
+.form-progress ul li::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 6px;
+    border-radius: 100px;
+    background-color: #D9D9D9;
+    left: 54%;
+    transform: translateX(-50%);
+}
+.form-progress ul li.active .steps-progess{
+    background-color: var(--primary-color);
+    
+}
+.form-progress ul li.active::before{
+    background-color: var(--primary-color);
+    /* animation-name: progressStatus;
+    animation-duration: 0.1s; */
+}
+/* @keyframes progressStatus{
+    0%{
+        width: 0%;
+    }
+    25%{
+        width: 20%;
+    }
+    50%{
+        width: 50%;
+    }75%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
+} */
+.form-progress ul li.active .steps{
+    color: var(--primary-color);
+}
+.r-form-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #818081;
+    line-height: 16.34px;
+}
+.r-form-field input{
+    border: 1px solid rgba(0, 0, 0, 0.189);
+    padding: 7px 7px;
+    border-radius: 4px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+.r-form-tel{
+    border: 1px solid rgba(0, 0, 0, 0.189);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.r-form-tel span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #818081;
+    border-right: 1px solid rgba(0, 0, 0, 0.189);
+    margin: auto 0;
+    padding: 0 10px;
+}
+.r-form-tel input{
+    border: none;
+}
+.r-form-tel input:focus{
+    border: none !important;
+}
+.r-form-field input:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);
+
+}
+
+.r-form-field input[type="checkbox"] {
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.189); 
+    border-radius: 4px; 
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+  }
+
+ 
+  .r-form-field input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+
+  .r-form-field input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  input[type="button"]{
+    background-color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 50px;
+    color: #fff;
+    border: none;
+  }
+
+  .e-code input{
+    border: 1px solid rgba(0, 0, 0, 0.189);
+    padding: 7px 7px;
+    border-radius: 4px;
+    margin-top: 3px;
+    font-size: 24px;
+    width: 52px;
+    height: 72px;
+    text-align: center;
+  }
+  .e-title p:nth-child(1){
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    margin-bottom: 5px;
+  }
+  .e-title p:nth-child(2){
+    font-size: 14px;
+    font-weight: 500;
+    color: #818081;
+    line-height: 19.36px;
+  }
+  .er-code{
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-align: end;
+  }
+  .e-back-btn{
+    font-size: 12px ;
+    font-weight: 500;
+    color: #818081;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Hide spinners in Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }

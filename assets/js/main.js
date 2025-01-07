@@ -1,4 +1,4 @@
-
+"use strict";
 
 // Login After Navbar
 
@@ -86,7 +86,7 @@ function hideModal() {
 }
 
 // Bid Dropdown 
-
+document.addEventListener("DOMContentLoaded", () => {
 const bidBtn = document.querySelector('.bid-dropdown-btn');
 const bidDropdown = document.querySelector('.bid-dropdown');
 
@@ -108,6 +108,21 @@ bidBtn.addEventListener('click', () => {
     bidBtn.classList.remove('active')
   }
 });
+});
+
+// Login Progress Js
+document.addEventListener("DOMContentLoaded", () => {
+const registerForm = document.querySelector('.r-form-a')
+const verificationCode = document.querySelector('.v-form')
+const ProgressBar = document.querySelectorAll('.progress-status')
 
 
-  
+const registerBtn = document.querySelector('#register-user')
+const verifyCodeBtn = document.getElementById('verifyCode-btn')
+let progressCount = 1
+registerBtn.addEventListener('click', (e)=>{
+  registerForm.classList.add('hidden')
+  verificationCode.classList.remove('hidden')
+  console.log(e)
+})
+});
