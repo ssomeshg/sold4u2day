@@ -115,14 +115,23 @@ document.addEventListener("DOMContentLoaded", () => {
 const registerForm = document.querySelector('.r-form-a')
 const verificationCode = document.querySelector('.v-form')
 const ProgressBar = document.querySelectorAll('.progress-status')
-
+const documentUpload = document.querySelector('.document-form')
 
 const registerBtn = document.querySelector('#register-user')
 const verifyCodeBtn = document.getElementById('verifyCode-btn')
 let progressCount = 1
-registerBtn.addEventListener('click', (e)=>{
+
+registerBtn.addEventListener('click', (e,progressCount)=>{
   registerForm.classList.add('hidden')
   verificationCode.classList.remove('hidden')
   console.log(e)
+  ProgressBar.forEach((item,e)=>{
+    console.log(item)
+  })
+ 
 })
-});
+verifyCodeBtn.addEventListener('click',()=>{
+  verificationCode.classList.add('hidden');
+  documentUpload.classList.remove('hidden')
+})
+});    

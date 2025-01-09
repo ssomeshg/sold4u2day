@@ -174,7 +174,7 @@
                   <h4 class="font-bold">Register</h4>
                   <div class="form-progress py-8">
                     <ul>
-                      <li class="progress-status active">
+                      <li class="progress-status active" id="step1">
                         <div class="steps-progess">
                             <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 4.6C1.7619 5.4 3.28571 7 3.28571 7L9 1" stroke="white"/>
@@ -183,7 +183,7 @@
                         <span class="steps text-sm font-medium uppercase">Step 1</span> 
                       </li>
                       
-                      <li class="progress-status">
+                      <li class="progress-status" id="step2">
                         <div class="steps-progess">
                           <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 4.6C1.7619 5.4 3.28571 7 3.28571 7L9 1" stroke="white"/>
@@ -191,7 +191,7 @@
                         </div>
                         <span class="steps text-sm font-medium uppercase">Step 1</span>
                       </li>
-                      <li class="progress-status">
+                      <li class="progress-status" id="step3">
                         <div class="steps-progess">   
                           <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 4.6C1.7619 5.4 3.28571 7 3.28571 7L9 1" stroke="white"/>
@@ -202,7 +202,7 @@
                     </ul>
                   </div>
                   <!-- Login Form -->
-                  <div class="r-form-a">
+                  <div class="r-form-a hidden">
                     <p class="text-lg font-bold"> Login Info</p>
                     <form class="r-form-field" action="" method="post">
                       <div class="row">
@@ -304,6 +304,92 @@
                     </div>
                      </div>
                    </div>
+
+                   <!-- Upload Documents-->
+                   <div class="document-form">
+
+                    <div class="row">
+                     <p class="text-lg font-bold">Upload your Idenitity Documents</p>
+
+                      <div class="row pb-3 border-b border-opacity-35">
+                        <div class="col-md-4 my-auto text-lg font-medium">
+                          Choose Document
+                        </div>
+                        <div class="col-md-4">
+                          <div class="d-choose relative">
+                            <input type="checkbox" name="passport" id="" >
+                            <p class="mb-0 absolute text-base font-semibold cursor-pointer">Passport</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="d-choose relative">
+                            <input type="checkbox" name="d-licence" id="" >
+                            <p class="mb-0 absolute text-base font-semibold cursor-pointer">Driving Licence</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row py-3">
+                        <div class="col-md-4">
+                          <div class="upload-d border border-opacity-40 rounded-md">
+                            <div class="border-b border-opacity-40 p-3 py-2 text-center">
+                              <p class="mb-0 text-sm font-medium">Upload Front side</p>
+                            </div>
+                            <label for="fileUpload" class="flex p-3">
+                              <div class="text-center flex flex-col w-100 justify-center items-center gap-3">
+                                <img class="opacity-25" src="./assets/img/icon/upload.svg" alt="">
+                                <p class="text-sm font-medium ">Drag and drop files here <br> or</p>
+                                <a class="py-2 px-3 text-sm text-white rounded-xl" style="background-color: var(--primary-color);">Browse File</a>                             
+                              </div>
+                            </label>
+                            <input type="file" name="fileUpload" id="fileUpload"  class="hidden" onClick="console.log(event)" multiple>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="upload-d border border-opacity-40 rounded-md h-100">
+                            <div class="border-b border-opacity-40 p-3 py-2 text-center">
+                              <p class="mb-0 text-sm font-medium">Upload Back side </p>
+                            </div>
+                            <label for="fileUpload" class="flex p-3">
+                              <div class="text-center flex flex-col w-100 justify-center items-center gap-3">
+                                <img class="opacity-25" src="./assets/img/icon/upload.svg" alt="">
+                                <p class="text-sm font-medium ">Upload Document</p>
+                                <a class="py-2 px-3 text-sm text-white rounded-xl" style="background-color: var(--primary-color);">Browse File</a>                             
+                              </div>
+                            </label>
+                            <input type="file" name="fileUpload" id="fileUpload"  class="hidden" onClick="console.log(event)" multiple>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="upload-d border border-opacity-40 rounded-md h-100">
+                            <div class="border-b border-opacity-40 p-3 py-2 text-center">
+                              <p class="mb-0 text-sm font-medium">Upload file</p>
+                            </div>
+                            <label for="fileUpload" class="flex p-3">
+                              <div class="text-center flex flex-col w-100 justify-center items-center gap-3">
+                                <div class=" flex flex-col justify-center items-center gap-2">
+                                  <img src="./assets/img/icon/Paper.svg" alt="" class="w-6 text-center">
+                                  <p class="text-sm font-semibold mb-0">Filename.png</p> 
+                                </div>
+                                <a class="text-xs font-medium rounded-xl flex gap-2" style="">Upladed Successfull <img src="./assets/img/icon/tick.svg" alt=""></a>                             
+                              </div>
+                            </label>
+                            <input type="file" name="fileUpload" id="fileUpload"  class="hidden" onClick="console.log(event)" multiple>
+                          </div>
+                        </div>
+                      </div>
+                      
+                   <div class="col-md-12 flex flex-row justify-between pt-20 border-b pb-2">
+                     <a href="" class="e-back-btn flex gap-3 items-center"><img src="./assets/img/icon/Arrow-Left.svg" alt="" class="opacity-30">Back</a>
+                     <input type="button" value="Verify" class="px-24 rounded-md" id="verifyCode-btn">
+                   </div>
+                   <div class="col-md-12 justify-center  pt-3 flex gap-1">
+                     <a href="" class="e-back-btn ">Have an account ? </a>
+                     <a href="" class="e-back-btn " style="color: var(--primary-color);">Login here </a>
+ 
+                   </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>

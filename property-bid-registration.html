@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sold4u2day</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Tailwind Css -->
+    <link rel="stylesheet" href="./assets/css/tailwind2/tailwind.min.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap5/bootstrap.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick-theme.css" />
+    <!-- Fontawesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Toggle cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-toggle/css/bootstrap-toggle.min.css" rel="stylesheet">
+    
+  </head>
+  <body class="body-grey">
+    <!--===== TopBar  =====-->
+    <nav id="topbar" class="bg-gradient-p hidden lg:block py-3">
+      <div class="container mx-auto">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="top-bar flex justify-between items-center">
+              <div class="flex gap-4">
+                <div class="top-telephone flex items-center gap-2">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.17961 7.82321C9.90899 10.5518 10.5282 7.39512 12.266 9.13171C13.9413 10.8066 14.9043 11.1422 12.7816 13.2643C12.5157 13.478 10.8264 16.0487 4.88947 10.1135C-1.04817 4.17747 1.52108 2.48641 1.73482 2.2206C3.86265 0.0926313 4.19243 1.06116 5.86781 2.73607C7.60562 4.47339 4.45024 5.0946 7.17961 7.82321Z" stroke="white" stroke-width="1.02632" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <a class="text-sm text-white " href="tel:">Tel: 020 8200 8222</a>
+                </div>
+                <div class="top-date flex items-center gap-2">
+                  <img src="./assets/img/icon/Mail.svg" class="w-4 h-4" alt="">
+                  <a class="text-sm text-white " href="">Email : sold4u2day@gmail.com</a>
+                </div>
+              </div>
+              <div class="flex gap-4 items-center">
+                <a href="" class="loginNav text-sm text-white hidden">Suport</a>
+                <a href="" class="loginNav text-sm text-white hidden">Contact Sales</a>
+                <div class="top-date flex items-center gap-2">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.93262 5.87754H13.0726" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M10.2759 8.31846H10.2817" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.50243 8.31846H7.50822" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.72411 8.31846H4.7299" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M10.2759 10.7477H10.2817" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.50243 10.7477H7.50822" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.72411 10.7477H4.7299" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M10.0278 1.25V3.30674" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.97798 1.25V3.30674" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1489 2.23682H4.85685C3.02142 2.23682 1.875 3.25927 1.875 5.13871V10.7947C1.875 12.7037 3.02142 13.7498 4.85685 13.7498H10.1431C11.9843 13.7498 13.125 12.7214 13.125 10.842V5.13871C13.1308 3.25927 11.9901 2.23682 10.1489 2.23682Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <a class="text-sm text-white " href="">Upcoming Auction: View Lots</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--===== TopBar  =====-->
+    <!--===== Navbar  =====-->
+    <div class="bg-secondary sticky top-0 z-50  w-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="flex justify-between items-center py-3 lg:py-0">
+              <div>
+                <a href="">
+                  <img src="./assets/img/logo.png" alt="" class="w-20">
+                </a>
+              </div>
+              <div class="text-white hidden lg:block">
+                <ul class="flex gap-6 mb-0 p-0">
+                  <li>
+                    <a href="index.html" class="block text-sm" style="line-height: 5.5rem;">Home</a>
+                  </li>
+                  <li>
+                    <a href="live-event-auction.html" class="flex gap-2 items-center text-sm " style="line-height: 5.5rem;">Auction <img src="./assets/img/icon/arrow.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="flex gap-2 items-center text-sm" style="line-height: 5.5rem;">Auction Guides <img src="./assets/img/icon/arrow.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="flex gap-2 items-center text-sm" style="line-height: 5.5rem;">Services <img src="./assets/img/icon/arrow.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="block text-sm" style="line-height: 5.5rem;">About Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-white hidden lg:flex lg:items-center gap-4 auth-buttons">
+                <a href="" class="text-sm bg-white font-medium px-4 py-2 rounded-xl" style="color: var(--primary-color); box-shadow: var(--primary-color) 4px 4px 0px;">Request vaulation</a>
+                <div class="relative nav-menu">
+                  <a href="" class="loginAuth flex gap-2 items-center text-sm " style="line-height: 5.5rem;">
+                    <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i> Login <img src="./assets/img/icon/arrow.svg" alt="">
+                  </a>
+                  <div class="login-submenu absolute -bottom-10 right-0 min-w-max bg-white text-black px-2 transform translate-y-14 border-1 border-gray-500">
+                    <a href='' class="py-3 border-b  px-4 flex gap-3 font-medium">
+                      <img src="./assets/img/icon/c-login.svg" alt="">Customer Login </a>
+                    <a href='' class="py-3 border-b  px-4 flex gap-3 font-medium">
+                      <img src="./assets/img/icon/a-login.svg" alt="">Agent & Seller Login </a>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="flex gap-2 items-center text-sm text-white hidden" id="customerAccountLogin">
+                <img src="./assets/img/icon/profile.svg" alt=""> Account <img src="./assets/img/icon/arrow.svg" alt="">
+              </a>
+              <div class="block lg:hidden">
+                <a href="" class="text-white">
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===== Navbar  =====-->
+    <!--===== Live Auction Lots  =====-->
+    <section class="py-10 pb-4">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-xl font-semibold">Bid Registration</p>
+              </div>
+              <div class="live-auction-nav">
+                <p class="flex gap-2 items-center grey-text text-sm font-medium mb-0">Good Morning Sharma!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===== Live Auction Lots  =====-->
+    <!--=====  Bid Register   =====-->
+    <section class="">
+      <div class="container">
+        <!-- Bid -->
+        <div class="row mb-3 px-3">
+          <div class="lg:flex border rounded-xl p-0">
+            <div class="col-lg-3 p-0">
+              <div class="lot-img relative overflow-hidden h-100">
+                <img src="./assets/img/live-property/lot-1.svg" alt="" class="w-100 h-100 rounded-xl">
+                <div class="lot-wishlist absolute top-0 flex justify-between items-center w-100 p-3 z-20">
+                  <a href="" class=" bg-white place-content-center text-xs font-bold py-2 px-3 rounded-md">For Sale</a>
+                  <a href="" class="bg-white w-10 h-10 rounded-full text-black flex items-center justify-center">
+                    <i class="fa-solid fa-heart" class="text-transparent"></i>
+                  </a>
+                </div>
+                <div class="absolute bottom-5 w-100 z-20 text-center text-white">
+                  <p class="text-2xl font-semibold uppercase">Lot 1</p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <div class="col-lg-6 px-3 py-4">
+              <div class="grid gap-3 border-b border-opacity-60 pb-10">
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max flex gap-1 items-center">
+                      <img src="./assets/img/icon/garage.svg" alt="">Apartment </a>
+                    <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max">Modern Method</a>
+                  </div>
+                  <span class="w-2 h-2 bg-green-500 rounded-full block"></span>
+                </div>
+                <h3 class="text-2xl font-semibold mb-0">Commercial Property for Sale</h3>
+                <div class="text-base font-medium text-black-400 flex item-center gap-1">
+                  <img src="./assets/img/icon/location-1.svg" class="" alt=""> Neal's Yard , Covent Garden , Province London WC2H 9LD
+                </div>
+                <div class="flex flex-wrap gap-2 items-center">
+                  <div class="flex items-center gap-1 pr-2 border-r ">
+                    <img src="./assets/img/icon/bed-double.svg" class="w-4" alt="">
+                    <p class="mb-0 text-sm font-normal">4 Beds</p>
+                  </div>
+                  <div class="flex items-center gap-1 pr-2 border-r">
+                    <img src="./assets/img/icon/bath.svg" class="w-5" alt="">
+                    <p class="mb-0 text-sm font-normal">2 Bathrooms</p>
+                  </div>
+                  <div class="flex items-center gap-1 pr-2 border-r">
+                    <img src="./assets/img/icon/feet-sq.svg" class="w-5" alt="">
+                    <p class="mb-0 text-sm font-normal">1200 sq ft</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-2 md:gap-0 md:flex justify-between pt-8">
+                <div class="flex gap-2 items-center">
+                  <img src="./assets/img/icon/Calendar.svg" alt="" class="w-5 h-5">
+                  <p class="mb-0 text-base font-semibold min-w-max">07 Nov 2024 ,5:00 PM</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <p class="mb-0 grey-text text-xs">Posted by</p>
+                  <a href="" class="flex gap-2 p-2 items-center bg-white text-sm font-medium shadow-md border border-opacity-80 rounded-full ">
+                    <img src="./assets/img/icon/gps-link.svg" alt="">GPS Link </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 p-3">
+              <!-- <div class="relative bg-no-repeat bg-cover" style="background-image: url(./assets/img/clip-box.svg);"><div class=" top-0 z-10">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam odit, voluptatem eligendi ipsam sint quas laborum quos dignissimos! Porro fugit reprehenderit omnis similique esse sed illum magni modi ipsam id. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem tempora repudiandae quod ad, et nulla voluptates ullam quibusdam quae eos, sed natus excepturi nostrum eaque quos dolorem obcaecati ducimus?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sequi, nesciunt error laboriosam odit laborum accusamus dignissimos exercitationem nihil aliquid possimus nisi voluptas dicta nemo optio maxime esse doloribus enim.
+                    </div></div> -->
+              <div class="lot-price-box">
+                <div class="clip-bg flex justify-end" style="width: 99%;height: 97%;left: 8px;top: 16px;">
+                  <div class="clip-counter text-center py-4 px-7">
+                    <div class="flex gap-3 text-white">
+                      <div class="flex gap-2 items-center text-center">
+                        <img src="./assets/img/icon/bid-soon.svg" alt="">
+                        <h4 class="counter text-lg font-light mb-0">Coming Soon</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clip-path"></div>
+                <div class="clip-box p-3 grid justify-end">
+                  <ul class="grid gap-3 justify-end">
+                    <li class="text-sm font-medium grey-text text-end">Starting Bid <span class="text-base font-bold ml-2">$78390</span>
+                    </li>
+                  </ul>
+                  <div class="grid items-end">
+                    <div class="text-center">
+                      <a href="" class="bg-black text-white py-3 px-12 rounded-full text-sm font-medium">Registration Inprogress</a>
+                    </div>
+                    <div>
+                      <a href="" class="flex justify-end items-center gap-1 text-sm font-bold ">
+                        <img src="./assets/img/icon/Show.svg" alt=""> 80 Watchlist </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bid Proceed  -->
+        <div class="row">
+          <div class="proceed-box ">
+            <div class="box-show flex justify-between items-center mb-3">
+              <div>
+                <p class='mb-0 text-xs font-semibold text-black' style="color: black !important;">Guidelines</p>
+                <p class="mb-0 text-xs font-normal">To bid the property, buyer should register and submit the required information</p>
+              </div>
+              <a href="">
+                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3">
+              </a>
+            </div>
+            <div class="box-show p-3">
+              <div class="grid lg:flex justify-center gap-5">
+                <div class="flex items-center gap-2">
+                  <div class="border rounded-full p-2 flex justify-center items-center w-8 h-8">
+                    <img src="./assets/img/icon/tick-1.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium mb-0 text-d">STEP 1 OF 4</p>
+                    <h5 class="font-semibold text-lg text-d mb-0">Your Details</h5>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="border rounded-full p-2 flex justify-center items-center w-8 h-8">
+                    <img src="./assets/img/icon/tick-1.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium mb-0 text-d">STEP 1 OF 4</p>
+                    <h5 class="font-semibold text-lg text-d mb-0">Your Details</h5>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="border rounded-full p-2 flex justify-center items-center w-8 h-8">
+                    <img src="./assets/img/icon/tick-1.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium mb-0 text-d">STEP 1 OF 4</p>
+                    <h5 class="font-semibold text-lg text-d mb-0">Your Details</h5>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="border rounded-full p-2 flex justify-center items-center w-8 h-8">
+                    <img src="./assets/img/icon/tick-1.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium mb-0 text-d">STEP 1 OF 4</p>
+                    <h5 class="font-semibold text-lg text-d mb-0">Your Details</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 py-14">
+              <div class="text-center">
+                <p class="text-sm text-d">To bid the property, buyer should register and submit the required information</p>
+                <input type="button" value="PROCEED" class="px-28 rounded-md" id="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Details section -->
+        <div class="row">
+          <div class="col-lg-3 py-5 lg:py-0 px-3 lg:px-0">
+            <!-- side links -->
+            <div class="mt-10 flex flex-col gap-3">
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3 active">
+                <div class="w-100 z-20 flex justify-between items-center">
+                  <p class="text-sm font-medium mb-0">Your Details</p>
+                  <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7378 0.761748H5.0848C3.0048 0.753748 1.2998 2.41175 1.2508 4.49075V15.2037C1.2048 17.3167 2.8798 19.0677 4.9928 19.1147C5.0238 19.1147 5.0538 19.1157 5.0848 19.1147H13.0738C15.1678 19.0297 16.8178 17.2997 16.8028 15.2037V6.03775L11.7378 0.761748Z" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11.4751 0.75V3.659C11.4751 5.079 12.6231 6.23 14.0431 6.234H16.7981" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11.2881 13.3584H5.88806" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9.24321 9.60596H5.88721" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3">
+                <div class="w-100 z-20 flex justify-between items-center">
+                  <p class="text-sm font-medium mb-0">Soliciator Details</p>
+                  <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.8877 7.89673C18.2827 7.70073 19.3567 6.50473 19.3597 5.05573C19.3597 3.62773 18.3187 2.44373 16.9537 2.21973" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18.7285 11.2505C20.0795 11.4525 21.0225 11.9255 21.0225 12.9005C21.0225 13.5715 20.5785 14.0075 19.8605 14.2815" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8867 11.6638C7.67273 11.6638 4.92773 12.1508 4.92773 14.0958C4.92773 16.0398 7.65573 16.5408 10.8867 16.5408C14.1007 16.5408 16.8447 16.0588 16.8447 14.1128C16.8447 12.1668 14.1177 11.6638 10.8867 11.6638Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8867 8.888C12.9957 8.888 14.7057 7.179 14.7057 5.069C14.7057 2.96 12.9957 1.25 10.8867 1.25C8.77766 1.25 7.06766 2.96 7.06766 5.069C7.05966 7.171 8.75666 8.881 10.8587 8.888H10.8867Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4.88472 7.89673C3.48872 7.70073 2.41572 6.50473 2.41272 5.05573C2.41272 3.62773 3.45372 2.44373 4.81872 2.21973" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3.04388 11.2505C1.69288 11.4525 0.749878 11.9255 0.749878 12.9005C0.749878 13.5715 1.19388 14.0075 1.91188 14.2815" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3">
+                <div class="w-100 z-20 flex justify-between items-center">
+                  <p class="text-sm font-medium mb-0">Agreement</p>
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.49224 0.789062H5.75324C2.67824 0.789062 0.750244 2.96606 0.750244 6.04806V14.3621C0.750244 17.4441 2.66924 19.6211 5.75324 19.6211H14.5772C17.6622 19.6211 19.5812 17.4441 19.5812 14.3621V10.3341" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.82775 8.92099L14.3008 1.44799C15.2318 0.517988 16.7408 0.517988 17.6718 1.44799L18.8888 2.66499C19.8198 3.59599 19.8198 5.10599 18.8888 6.03599L11.3798 13.545C10.9728 13.952 10.4208 14.181 9.84475 14.181H6.09875L6.19275 10.401C6.20675 9.84499 6.43375 9.31499 6.82775 8.92099Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.1652 2.60254L17.7312 7.16854" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3">
+                <div class="w-100 z-20 flex justify-between items-center">
+                  <p class="text-sm font-medium mb-0">Payment</p>
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.6389 12.3957H16.5906C15.1042 12.3948 13.8993 11.1909 13.8984 9.70446C13.8984 8.21801 15.1042 7.01409 16.5906 7.01318H20.6389" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.0485 9.64294H16.7369" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.74766 1H15.3911C18.2892 1 20.6388 3.34951 20.6388 6.24766V13.4247C20.6388 16.3229 18.2892 18.6724 15.3911 18.6724H6.74766C3.84951 18.6724 1.5 16.3229 1.5 13.4247V6.24766C1.5 3.34951 3.84951 1 6.74766 1Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.03564 5.5382H11.4346" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="bit-box1 rounded-lg d-box-2 flex justify-between px-3" style="background-image: url('./assets/img/p-3.png');">
+                <div class="overley-pack"></div>
+                <div class="w-100 text-white z-20 flex flex-col justify-center gap-3 items-center">
+                  <img src="./assets/img/icon/guide.svg" alt="" class="w-7 h-7">
+                  <p class="text-sm font-medium mb-0">Bidding Guidelines</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-9 ">
+            <!-- Step-1 -->
+            <div class="mt-10 px-3 lg:pl-8">
+              <p class="text-sm font-medium mb-0 text-d">STEP 1 OF 4</p>
+              <h5 class="font-semibold text-lg text-d mb-0">Your Details</h5>
+              <!-- PErsonal Informations -->
+              <div class="mt-3">
+                <div class="row r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
+                  <div class="col-md-12 py-2 bg-gray-100 mb-3 border-b ">
+                    <p class="mb-0 text-sm font-semibold">Please fill the required informations</p>
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">First Name</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Last Name</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Email Id</label>
+                    <input type="email" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Mobile Number</label>
+                    <input type="tel" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">DOB</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Occupation</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                </div>
+              </div>
+              <!-- Address Details -->
+              <div class="mt-3">
+                <div class="row r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
+                  <div class="col-md-12 py-2 bg-gray-100 mb-3 border-b ">
+                    <p class="mb-0 text-sm font-semibold">Address Details</p>
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">House no</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Address Line 1</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Address Line 2</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Address Line 3</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Post Code</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Country</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                </div>
+              </div>
+              <!-- Buying Position -->
+              <div class="mt-3 mb-4">
+                <div class="row r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
+                  <div class="col-md-12 py-2 bg-gray-100 mb-3 border-b ">
+                    <p class="mb-0 text-sm font-semibold">Buying Position</p>
+                  </div>
+                  <div class="col-md-12 flex gap-4 items-center mb-3">
+                    <p class="mb-0 text-sm font-semibold">What type of purchase is this?</p>
+                    <div class="flex items-center gap-3">
+                      <div class="flex items-center gap-1">
+                        <input type="radio" name="p-type" id="personal" class="mt-0">
+                        <label for="personal">Personal</label>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <input type="radio" name="p-type" id="business" class="mt-0">
+                        <label for="business">Business</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 flex gap-4 items-center mb-3">
+                    <p class="mb-0 text-sm font-semibold">Are There any Additional Buyers?</p>
+                    <div class="flex items-center gap-3">
+                      <div class="flex items-center gap-1">
+                        <input type="radio" name="b-type" id="yes-b" class="mt-0">
+                        <label for="yes-b">Yes</label>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <input type="radio" name="b-type" id="no-b" class="mt-0">
+                        <label for="no-b">No</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">House no</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Address Line 1</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Address Line 2</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Address Line 3</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Post Code</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Country</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">House no</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Address Line 1</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Address Line 2</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Address Line 3</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Post Code</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-4 flex flex-col mb-3">
+                    <label for="">Country</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-12 flex gap-4 items-center mb-3">
+                    <p class="mb-0 text-sm font-semibold">Are you Buying with Mortage?</p>
+                    <div class="flex items-center gap-3">
+                      <div class="flex items-center gap-1">
+                        <input type="radio" name="p-type" id="personal" class="mt-0">
+                        <label for="personal">Personal</label>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <input type="radio" name="p-type" id="business" class="mt-0">
+                        <label for="business">Business</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 flex flex-col mb-3">
+                    <label for="">Primary Source of fund</label>
+                    <select name="" id="">
+                      <option value="">1</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 flex flex-col mb-3">
+                    <label for="">Reason for purchase</label>
+                    <select name="" id="">
+                      <option value="">1</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12 flex flex-row justify-end mb-3">
+                    <input type="button" value="Next" class="px-24" id="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Step-2 -->
+          <div class="mt-10 px-3 lg:pl-8">
+            <div class="box-show flex justify-between items-center">
+              <div>
+                <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
+                <h5 class="font-semibold text-base text-d mb-0">Your Details</h5>
+              </div>
+
+              <a href="">
+                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+              </a>
+            </div>
+
+            <div class="mt-3">
+              <p class="text-sm font-medium mb-0 text-d">STEP 2 OF 4</p>
+              <h5 class="font-semibold text-lg text-d mb-0">Add Solicitator Details</h5>
+            </div>
+
+            <!-- Agreement Details -->
+            <div class="mt-3 flex justify-center">
+              <div class="row w-100 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
+                <div class="col-md-12 py-2 bg-gray-100 mb-3 border-b flex justify-between items-center">
+                  <p class="mb-0 text-sm font-semibold">Agreement Details</p>
+                  <a href="" class="text-xs font-medium px-5 rounded-md py-2 text-white bg-primary">Add New</a>
+                </div>
+                <div class="col-md-12 flex flex-col mb-3">
+                  <label for="">Select Solicitor  </label>
+                  <select name="" id="">
+                    <option value="">Empty</option>
+                  </select>
+                </div>
+                <div class="col-md-12 my-3 py-5 flex gap-2 justify-end">
+                  <a href="" class="px-10 py-2 text-sm rounded-md  bg-white border border-opacity-25 text-gray-600 text-opacity-30 font-medium">Skip</a>
+                  <a href="" class="px-10 py-2 text-sm rounded-md  bg-primary  text-white font-medium">Next</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            <!-- Step-3 -->
+          <div class="mt-10 px-3 lg:pl-8">
+            <div class="box-show flex justify-between items-center mb-3">
+              <div>
+                <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
+                <h5 class="font-semibold text-base text-d mb-0">Your Details</h5>
+              </div>
+
+              <a href="">
+                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+              </a>
+            </div>
+            <div class="box-show flex justify-between items-center">
+              <div>
+                <p class="text-xs font-medium mb-0 text-d">STEP 2 OF 4</p>
+                <h5 class="font-semibold text-base text-d mb-0">Soliciator Details</h5>
+              </div>
+
+              <a href="">
+                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+              </a>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-sm font-medium mb-0 text-d">STEP 3 OF 4</p>
+              <h5 class="font-semibold text-lg text-d mb-0">Agreement</h5>
+            </div>
+
+            <!-- Agreement Details -->
+            <div class="mt-3 flex justify-center">
+              <div class="row w-100 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
+                <div class="col-md-12 py-2 bg-gray-100 mb-3 border-b flex justify-between items-center">
+                  <p class="mb-0 text-sm font-semibold">Agreement Details</p>
+                </div>
+                <div class="col-md-12">
+                  <p class="mb-0 text-base font-semibold">Accept Terms & Conditions</p>
+
+                  <div class="bg-gray-50 flex gap-2 p-3 rounded-md mt-3">
+                    <input type="checkbox" name="" id="">
+                    <div class="">
+                      <p class="mb-1 text-xs font-bold">Terms & Condition 1</p>
+                      <p class="mb-0 text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint velit dolores? Adipisci, temporibus numquam aliquid accusantium consequuntur odio! In aperiam eum tempora cupiditate tempore blanditiis non eos ea. Commodi!</p>
+                    </div>
+                  </div>
+                  <div class="bg-gray-50 flex gap-2 p-3 rounded-md mt-3">
+                    <input type="checkbox" name="" id="">
+                    <div class="">
+                      <p class="mb-1 text-xs font-bold">Terms & Condition 2</p>
+                      <p class="mb-0 text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint velit dolores? Adipisci, temporibus numquam aliquid accusantium consequuntur odio! In aperiam eum tempora cupiditate tempore blanditiis non eos ea. Commodi!</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-gray-50 p-3 rounded-md mt-3">
+                    <p class="mb-1 text-xs font-bold">Pdf Agreement</p>
+                    <div class="bg-white p-4 flex justify-center">
+                      <img src="./assets/img/pdf.png" alt="" class="w-80 h-auto">
+                    </div>
+                  </div>
+
+                  <div class="bg-gray-50 flex gap-2 p-3 rounded-md mt-3">
+                    <input type="checkbox" name="" id="">
+                    <div class="">
+                      <p class="mb-1 text-xs font-bold">Acceptance </p>
+                      <p class="mb-0 text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint velit dolores? Adipisci, temporibus numquam aliquid accusantium consequuntur odio! In aperiam eum tempora cupiditate tempore blanditiis non eos ea. Commodi!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 my-3 py-5 flex gap-2 justify-end">
+              <a href="" class="px-10 py-2 text-sm rounded-md  bg-primary  text-white font-medium">Next</a>
+            </div>
+          </div>
+
+          <!-- Step-4 -->
+          <div class="mt-10 px-3 lg:pl-8">
+            <div class="box-show flex justify-between items-center mb-3">
+              <div>
+                <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
+                <h5 class="font-semibold text-base text-d mb-0">Your Details</h5>
+              </div>
+
+              <a href="">
+                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+              </a>
+            </div>
+            <div class="box-show flex justify-between items-center mb-3">
+              <div>
+                <p class="text-xs font-medium mb-0 text-d">STEP 2 OF 4</p>
+                <h5 class="font-semibold text-base text-d mb-0">Soliciator Details</h5>
+              </div>
+
+              <a href="">
+                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+              </a>
+            </div>
+            <div class="box-show flex justify-between items-center">
+              <div>
+                <p class="text-xs font-medium mb-0 text-d">STEP 3 OF 4</p>
+                <h5 class="font-semibold text-base text-d mb-0">Agreement</h5>
+              </div>
+
+              <a href="">
+                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+              </a>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-sm font-medium mb-0 text-d">STEP 4 OF 4</p>
+              <h5 class="font-semibold text-lg text-d mb-0">Payment Details</h5>
+            </div>
+
+            <!-- Agreement Details -->
+            <div class="mt-3 flex justify-center">
+              <div class="row w-100 bg-white rounded-md overflow-hidden border border-opacity-25">
+
+                <div class="col-md-12 p-3">
+                  <div class="flex justify-between mb-1"> 
+                    <p class="mb-0 text-sm font-semibold">Bid Registration Amount </p>
+                    <h6 class="font-bold text-lg mb-0">$ 672829</h6>
+                  </div>
+                  <div class="flex justify-between mb-1"> 
+                    <div class="flex gap-2 items-center">
+                      <p class="mb-0 text-sm font-semibold">Legal Pack Amount </p>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input bg-green-600" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style="background-color: #8ADA10 !important ; border: 0.3px solid #8ADA10;">
+                    </div>
+                    </div>
+                    <h6 class="font-bold text-lg mb-0">$ 500</h6>
+                  </div>
+                  <div class="flex justify-between mb-1"> 
+                    <p class="mb-0 text-sm font-semibold">Tax </p>
+                    <h6 class="font-bold text-lg mb-0">$ 250</h6>
+                  </div>
+                  <div class="flex justify-between mb-1 mt-2 border-t py-3"> 
+                    <p class="mb-0 text-sm font-semibold">Total Amount </p>
+                    <h6 class="font-bold text-lg text-default mb-0">$ 673200</h6>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 my-3 py-5 flex gap-2 justify-end">
+              <a href="" class="px-10 py-2 text-sm rounded-md bg-transparent text-black border border-black font-medium">Skip for Now</a>
+              <a href="" class="px-10 py-2 text-sm rounded-md bg-primary text-white font-medium">Pay Now</a>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <div class=" py-40">
+            <div class="text-center flex flex-col justify-center items-center">
+              <img src="./assets/img/tick-1.png" alt="" class="w-40">
+              <p class="text-sm text-d">Your bid registration submitted successfully & its under review
+                Kindly check the status in your dashboard</p>
+              <input type="button" value="Go To Dashboard" class="px-28 rounded-md max-w-min" id="">
+            </div>
+          </div>
+          </div>
+
+          
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--=====  Lots Items  =====-->
+    <!--===== Marquee Section  =====-->
+    <section>
+      <div class="marquee py-3">
+        <div class="team-scroll py-2">
+          <span class="uppercase title-f font-semibold">Sold4u2day</span>
+          <img src="./assets/img/icon/star.svg" alt="Star">
+          <span class="uppercase title-f font-semibold">Sold4u2day</span>
+          <img src="./assets/img/icon/star.svg" alt="Star">
+          <span class="uppercase title-f font-semibold">Sold4u2day</span>
+          <img src="./assets/img/icon/star.svg" alt="Star">
+        </div>
+      </div>
+    </section>
+    <!--===== Marquee Section  =====-->
+    <!--===== Footer Section  =====-->
+    <footer class="bg-secondary py-20 pb-2">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="text-center">
+              <p class="title-f  mb-1  font-semibold text-white">Instant Online House Valuation</p>
+              <p style="color: var(--primary-color);">Discover your home's value in two quick steps.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div>
+              <div class="text-white border-b flex justify-between items-center py-3 px-1">
+                <p class="text-2xl font-medium uppercase mb-0">Stamp Duty Calculator</p>
+                <a href="" class="flex items-center gap-2 font-medium min-w-max" style="color: var(--primary-color);">click to view <img class="w-10" src="./assets/img/icon/valuation-arrow.svg" alt="">
+                </a>
+              </div>
+              <div class="text-white border-b flex justify-between items-center py-3 px-1">
+                <p class="text-2xl font-medium uppercase mb-0">BTL Calculator</p>
+                <a href="" class="flex items-center gap-2 font-medium min-w-max" style="color: var(--primary-color);">click to view <img class="w-10" src="./assets/img/icon/valuation-arrow.svg" alt="">
+                </a>
+              </div>
+              <div class="text-white border-b flex justify-between items-center py-3 px-1">
+                <p class="text-2xl font-medium uppercase mb-0">Mortgage Calculator</p>
+                <a href="" class="flex items-center gap-2 font-medium min-w-max" style="color: var(--primary-color);">click to view <img class="w-10" src="./assets/img/icon/valuation-arrow.svg" alt="">
+                </a>
+              </div>
+              <p class="text-xs text-center mt-3 text-white">Sold4U2Day is a trading style of GPS Link Estates LTD, Registered in England. Company No: 11602505. Registered Office Address: 228, Church Lane, London NW9 8SN. We are a member of the key governing bodies, abiding by the strictest codes of practice.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-3">
+            <div>
+              <p class="text-2xl font-medium" style="color: var(--primary-color);">Quick Links</p>
+              <ul class="p-0 text-white">
+                <li class="mb-2 font-medium">
+                  <a href="">Property Search</a>
+                </li>
+                <li class="mb-2 font-medium">
+                  <a href="">Auctions</a>
+                </li>
+                <li class="mb-2 font-medium">
+                  <a href="">Valuations</a>
+                </li>
+                <li class="mb-2 font-medium">
+                  <a href="">Services</a>
+                </li>
+                <li class="mb-2 font-medium">
+                  <a href="">About Us</a>
+                </li>
+              </ul>
+              <img src="./assets/img/card.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <p class="text-2xl font-medium" style="color: var(--primary-color);">Support</p>
+              <ul class="p-0 text-white">
+                <li class="mb-2 font-medium">
+                  <a href="">Stamp Duty</a>
+                </li>
+                <li class="mb-2 font-medium">
+                  <a href="">Instant Valuation</a>
+                </li>
+                <li class="mb-2 font-medium">
+                  <a href="">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <p class="text-2xl font-medium" style="color: var(--primary-color);">Contact Us </p>
+              <p class="text-white"> 228, Church Lane, London, NW9 8SN. </p>
+              <ul class="p-0 text-white">
+                <li>
+                  <a href="">Tel : <span style="color: var(--primary-color);"> 020 8200 8222</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">Email: <span style="color: var(--primary-color);"> enquiries@gpslink.co.uk</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39675.698423670416!2d-0.30305323278746105!3d51.573161933684176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876116b7a20ebf5%3A0x7cc618dc9cedefdb!2s228%20Church%20Ln%2C%20London%20NW9%208SN%2C%20UK!5e0!3m2!1sen!2sin!4v1735041791270!5m2!1sen!2sin" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <img src="./assets/img/logos.png" alt="">
+          </div>
+          <div class="col-md-12 border-t border-opacity-40 mt-2 py-4 text-center">
+            <a href="" class="text-center text-white">All Rights Reserved. Sold4U2Day © 2024</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--===== Footer Section  =====-->
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+    <!-- Bootstrap js -->
+    <script src="./assets/css/bootstrap5/bootstrap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery and slick js -->
+    <script type="text/javascript" src="./assets/css/slick/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./assets/css/slick/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="./assets/css/slick/slick.min.js"></script>
+    <!-- fontawesom 6 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap Toggle Cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+
+  </body>
+</html>

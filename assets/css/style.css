@@ -28,6 +28,9 @@ body{
 p{
     margin-bottom: 0px ;
 }
+.body-grey{
+    background: rgba(250, 251, 252, 1);
+}
 .secondary-font{
     font-family: var(--secondary-font);
 }
@@ -35,6 +38,7 @@ p{
     font-family: "Orbitron", sans-serif;
     font-size: 32px;
 }
+
 .bg-primary{
     background-color:var(--primary-color);
 }
@@ -52,6 +56,9 @@ p{
 }
 .container{
     margin: auto !important;
+}
+.text-default{
+    color: var(--primary-color) !important;
 }
 .grey-text{
     color: #5B6A84;
@@ -490,6 +497,10 @@ select{
 .box-show p{
     color: #343F4F !important;
 }
+.text-d{
+    color: #343F4F !important;
+ 
+}
 .p-view p a{
     color: var(--primary-color);
 }
@@ -732,7 +743,7 @@ select{
     width: 110px;
     height: 100px;
     background: linear-gradient(88deg, #ff5e0061, #ff5e000d);
-    border-radius: 200px;
+    border-radius: 170px;
     right: -33px;
     top: -13px;
     border: 1px solid #ff464624
@@ -835,6 +846,13 @@ select{
     line-height: 16.34px;
 }
 .r-form-field input{
+    border: 1px solid rgba(0, 0, 0, 0.189);
+    padding: 7px 7px;
+    border-radius: 4px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+.r-form-field select {
     border: 1px solid rgba(0, 0, 0, 0.189);
     padding: 7px 7px;
     border-radius: 4px;
@@ -945,7 +963,102 @@ select{
     margin: 0;
   }
 
-  /* Hide spinners in Firefox */
   input[type="number"] {
     -moz-appearance: textfield;
   }
+
+  
+.d-choose input[type="checkbox"] {
+    appearance: none;
+    width: 100%;
+    height: 44px;
+    border: 2px solid rgba(0, 0, 0, 0.189);
+    border-radius: 4px;
+    background-color: transparent;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+  }
+
+ .d-choose p{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color:#818081;
+ }
+ .d-choose input[type="checkbox"]:checked + p{
+    color: var(--primary-color) !important;
+  }
+  .d-choose input[type="checkbox"]:checked {
+    /* background-color: var(--primary-color); */
+    border-color: var(--primary-color);
+  }
+ 
+
+  .d-choose input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 4px;
+    display: flex;
+    justify-self: right;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    color: #000;
+  }
+  .d-choose input[type="checkbox"]:checked::before{
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-self: right;
+    background-color: var(--primary-color);
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Bid Register CSS */
+  
+.bit-box{
+    min-height:50px;
+    height: 50px;
+    width: 100%;
+    font-family: var(--secondary-font) !important;
+}
+.bit-box1{
+    min-height:170px;
+    height: 170px;
+    width: 100%;
+    font-family: var(--secondary-font) !important;
+}
+
+.b-box-g{
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.504);
+    overflow: hidden;
+    color: #000;
+}
+.b-box-g.active{
+    color:var(--primary-color)!important;
+    border: 1px solid var(--primary-color);
+
+}
+.b-box-g::after{
+    content: '';
+    position: absolute;
+    width: 102px;
+    height: 75px; 
+    background: linear-gradient(88deg, #ff5e0061, #ff5e000d);
+    border-radius: 170px;
+    right: -33px;
+    top: -13px;
+    border: 1px solid #ff464624
+}
+.b-box-g svg{
+    margin-right: 8px;
+}
+
