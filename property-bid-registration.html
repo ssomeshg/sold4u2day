@@ -306,10 +306,10 @@
         </div>
         <!-- Details section -->
         <div class="row">
-          <div class="col-lg-3 py-5 lg:py-0 px-3 lg:px-0">
+          <div class="col-lg-3 py-5 lg:py-0 px-3 lg:px-0 mb-10">
             <!-- side links -->
-            <div class="mt-10 flex flex-col gap-3">
-              <div class="bit-box rounded-lg b-box-g flex justify-between px-3 active">
+            <div class="mt-10 flex flex-col gap-3 nav nav-tabs"id="myTab" role="tablist">
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3 active"  id="details-tab" data-bs-toggle="pill" data-bs-target="#your-details" type="button" role="tab" aria-controls="your-details" aria-selected="true">
                 <div class="w-100 z-20 flex justify-between items-center">
                   <p class="text-sm font-medium mb-0">Your Details</p>
                   <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -320,7 +320,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="bit-box rounded-lg b-box-g flex justify-between px-3">
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3" id="soliciator-tab" data-bs-toggle="pill" data-bs-target="#soliciator" type="button" role="tab" aria-controls="soliciator" aria-selected="false">
                 <div class="w-100 z-20 flex justify-between items-center">
                   <p class="text-sm font-medium mb-0">Soliciator Details</p>
                   <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -333,7 +333,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="bit-box rounded-lg b-box-g flex justify-between px-3">
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3" id="agreement-tab" data-bs-toggle="pill" data-bs-target="#agreement" type="button" role="tab" aria-controls="agreement" aria-selected="false">
                 <div class="w-100 z-20 flex justify-between items-center">
                   <p class="text-sm font-medium mb-0">Agreement</p>
                   <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -343,7 +343,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="bit-box rounded-lg b-box-g flex justify-between px-3">
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3" id="payment-tab" data-bs-toggle="pill" data-bs-target="#payment" type="button" role="tab" aria-controls="payment" aria-selected="false">
                 <div class="w-100 z-20 flex justify-between items-center">
                   <p class="text-sm font-medium mb-0">Payment</p>
                   <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -364,9 +364,9 @@
             </div>
           </div>
 
-          <div class="col-lg-9 ">
+          <div class="col-lg-9 tab-content" id="myTabContent">
             <!-- Step-1 -->
-            <div class="mt-10 px-3 lg:pl-8">
+            <div class="mt-10 px-3 lg:pl-8 tab-pane fade show active"  id="your-details" role="tabpanel" aria-labelledby="details-tab">
               <p class="text-sm font-medium mb-0 text-d">STEP 1 OF 4</p>
               <h5 class="font-semibold text-lg text-d mb-0">Your Details</h5>
               <!-- PErsonal Informations -->
@@ -545,7 +545,7 @@
               </div>
             </div>
             <!-- Step-2 -->
-          <div class="mt-10 px-3 lg:pl-8">
+          <div class="mt-10 px-3 lg:pl-8 tab-pane fade show" id="soliciator" role="tabpanel" aria-labelledby="soliciator-tab">
             <div class="box-show flex justify-between items-center">
               <div>
                 <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
@@ -584,7 +584,7 @@
 
           </div>
             <!-- Step-3 -->
-          <div class="mt-10 px-3 lg:pl-8">
+          <div class="mt-10 px-3 lg:pl-8 tab-pane fade show" id="agreement" role="tabpanel" aria-labelledby="agreement-tab">
             <div class="box-show flex justify-between items-center mb-3">
               <div>
                 <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
@@ -658,7 +658,7 @@
           </div>
 
           <!-- Step-4 -->
-          <div class="mt-10 px-3 lg:pl-8">
+          <div class="mt-10 px-3 lg:pl-8 tab-pane fade show" id="payment" role="tabpanel" aria-labelledby="payment-tab">
             <div class="box-show flex justify-between items-center mb-3">
               <div>
                 <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
@@ -733,7 +733,7 @@
           </div>
 
           <!-- Submit -->
-          <div class=" py-40">
+          <div class=" py-40 tab-pane fade show" id="payment" role="tabpanel" aria-labelledby="payment-tab">
             <div class="text-center flex flex-col justify-center items-center">
               <img src="./assets/img/tick-1.png" alt="" class="w-40">
               <p class="text-sm text-d">Your bid registration submitted successfully & its under review
