@@ -125,81 +125,137 @@
       </div>
     </div>
     <!--===== Navbar  =====-->
-    <!--===== Event Auctions  =====-->
-    <section class="py-10">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-md-12">
-            <div class="grid lg:flex justify-between items-center">
-              <div>
-                <p class="text-xl font-semibold">EVENT AUCTIONS</p>
+    <!--===== Request Form Section  =====-->
+    <section class="py-9">
+      <div class="container  border-2 border-opacity-40 rounded-sm ">
+        <div class="row relative">
+          <div class="absolute v-form-img">
+            <img src="./assets/img/form-comp.svg" class="w-24" alt="">
+          </div>
+          <div class="col-lg-3 py-5 lg:py-0 px-3 lg:px-0 mb-10">
+            <!-- side links -->
+            <div class="mt-10 flex flex-col gap-3 nav nav-tabs border-b-0" id="myTab" role="tablist">
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3 active" id="details-tab" data-bs-toggle="pill" data-bs-target="#your-details" type="button" role="tab" aria-controls="your-details" aria-selected="true">
+                <div class="w-100 z-20 flex justify-between items-center">
+                  <p class="text-sm font-medium mb-0">Account Settings</p>
+                  <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7378 0.761748H5.0848C3.0048 0.753748 1.2998 2.41175 1.2508 4.49075V15.2037C1.2048 17.3167 2.8798 19.0677 4.9928 19.1147C5.0238 19.1147 5.0538 19.1157 5.0848 19.1147H13.0738C15.1678 19.0297 16.8178 17.2997 16.8028 15.2037V6.03775L11.7378 0.761748Z" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11.4751 0.75V3.659C11.4751 5.079 12.6231 6.23 14.0431 6.234H16.7981" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11.2881 13.3584H5.88806" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9.24321 9.60596H5.88721" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
               </div>
-              <div class="auction-nav">
-                <ul class="bg-grey nav nav-pills mb-3 p-2 rounded-lg" id="pills-tab" role="tablist">
-                  <li class="nav-item sm:w-100 lg:w-auto" role="presentation">
-                    <button class="auction-link nav-link font-medium s lg:w-auto active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Live Auctions</button>
-                  </li>
-                  <li class="nav-item sm:w-100 lg:w-auto" role="presentation">
-                    <button class="auction-link nav-link font-medium  lg:w-auto" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Upcoming Auctions</button>
-                  </li>
-                  <li class="nav-item sm:w-100 lg:w-auto" role="presentation">
-                    <button class="auction-link nav-link font-medium lg:w-auto" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Past Auctions</button>
-                  </li>
-                </ul>
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3" id="soliciator-tab" data-bs-toggle="pill" data-bs-target="#soliciator" type="button" role="tab" aria-controls="soliciator" aria-selected="false">
+                <div class="w-100 z-20 flex justify-between items-center">
+                  <p class="text-sm font-medium mb-0">Delete Account</p>
+                  <svg width="22" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Stroke 1" d="M19.3248 9.46875C19.3248 9.46875 18.7818 16.2037 18.4668 19.0407C18.3168 20.3957 17.4798 21.1898 16.1088 21.2148C13.4998 21.2618 10.8878 21.2648 8.27979 21.2098C6.96079 21.1828 6.13779 20.3788 5.99079 19.0478C5.67379 16.1858 5.13379 9.46875 5.13379 9.46875" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="Stroke 3" d="M20.708 6.24023H3.75" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="Stroke 5" d="M17.4406 6.23998C16.6556 6.23998 15.9796 5.68498 15.8256 4.91598L15.5826 3.69998C15.4326 3.13898 14.9246 2.75098 14.3456 2.75098H10.1126C9.53358 2.75098 9.02558 3.13898 8.87558 3.69998L8.63258 4.91598C8.47858 5.68498 7.80258 6.23998 7.01758 6.23998" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                </div>
               </div>
+
+
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="auction-sec grid lg:flex rounded-lg overflow-hidden" style="border: 2px solid #f3722a73;">
-              <div class="auction-date text-center place-content-center p-4 px-5">
-                <p class="mb-1 text-xl font-medium">Wed</p>
-                <h4 class="font-bold text-3xl">28</h4>
+          <div class="col-lg-8 bg-white rounded-lg rounded-l-none py-10 px-5">
+            <!-- Personal Details -->
+            <div class="r-form-head">
+              <div class="row">
+                <h4 class="font-semibold text-xl text-default p-0 m-0">Profile</h4>
               </div>
-              <div class="flex-1 grid lg:flex justify-center lg:justify-between p-3">
-                <div class="flex-1 grid gap-2 lg:gap-1 mb-2 lg:mb-0">
-                  <p class="mb-0 text-xl font-semibold">Commercial property for Sale</p>
-                  <p class="mb-0 text-base font-medium grey-text flex gap-2 items-center">
-                    <img src="./assets/img/icon/Calendar.svg" class="w-4" alt="">28 Nov 2024 05:00 PM
-                  </p>
-                  <div class="flex gap-3">
-                    <p class="mb-0 text-base font-medium grey-text flex gap-1 items-center ">
-                      <img src="./assets/img/icon/Location.svg" class="w-5" alt="">Venue
-                    </p>
-                    <p class="mb-0 text-base font-medium grey-text flex gap-1 items-center flex-1">
-                      <img src="./assets/img/icon/Time Square.svg" class="w-5" alt="">15 mins left
-                    </p>
-                  </div>
+              <div class="row py-2 mt-4 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
+                <div class="col-md-12 pt-2 mb-3 flex justify-between items-center">
+                  <p class="mb-0 text-sm font-semibold">Personal Details</p>
+                  <a href=""><img src="./assets/img/icon/edit.svg" alt="" class="w-4"></a>
                 </div>
-                <div>
-                  <div class="flex gap-3">
-                    <div class="grid justify-items-center">
-                      <div class="px-2 py-2 border rounded-lg text-center grid justify-items-center">
-                        <p class="flex gap-2 items-center text-sm grey-text font-medium">
-                          <img class="w-4" src="./assets/img/icon/Paper.svg" alt="">25 Lots
-                        </p>
-                        <a href="" class="bg-grey grey-text font-medium text-sm w-100 px-5 py-1 rounded-md">4 LOTS LEFT</a>
-                      </div>
+                <div class="col-md-6 flex flex-col mb-3">
+                    <label for="">First Name</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-6 flex flex-col mb-3">
+                    <label for="">Last Name</label>
+                    <input type="text" class="bg-transparent">
+                  </div>
+                  <div class="col-md-6 flex flex-col mb-3">
+                    <label for="">Mobile Number</label>
+                    <input type="tel" class="bg-transparent">
+                  </div>
+                  <div class="col-md-6 flex flex-col mb-3">
+                    <label for="">Email</label>
+                    <input type="email" class="bg-transparent">
+                  </div>
+                <div class="col-md-6 flex flex-col mb-3">
+                  <label for="">Password</label>
+                  <input type="password" class="bg-transparent">
+                </div>
+              </div>
+            </div>
+            <!-- Edit Document -->
+            <div class="r-form-head">
+                <div class="row py-3 mt-4 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
+                    <div class="col-md-12 pt-2 mb-3 flex justify-between items-center">
+                      <p class="mb-0 text-sm font-semibold">Edit Document</p>
+                      <a href=""><img src="./assets/img/icon/edit.svg" alt="" class="w-4"></a>
                     </div>
-                    <a href="" class="border rounded-lg grid justify-items-center gap-2 py-2 px-2" style="align-content: center">
-                      <img src="./assets/img/icon/Downlaod.svg" class="w-4" alt="">
-                      <p class="mb-0 text-sm font-medium grey-text">Catalogue</p>
-                    </a>
+                    <div class="col-md-4">
+                        <div class="upload-d border border-opacity-40 rounded-md">
+                          <div class="border-b border-opacity-40 p-3 py-2 text-center">
+                            <p class="mb-0 text-sm font-medium">Upload Front side</p>
+                          </div>
+                          <label for="fileUpload" class="flex p-3">
+                            <div class="text-center flex flex-col w-100 justify-center items-center gap-3">
+                              <img class="opacity-25" src="./assets/img/icon/upload.svg" alt="">
+                              <p class="text-sm font-medium ">Drag and drop files here <br> or </p>
+                              <a class="py-2 px-3 text-sm text-white rounded-xl" style="background-color: var(--primary-color);">Browse File</a>
+                            </div>
+                          </label>
+                          <input type="file" name="fileUpload" id="fileUpload" class="hidden" onClick="console.log(event)" multiple>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="upload-d border border-opacity-40 rounded-md h-100">
+                          <div class="border-b border-opacity-40 p-3 py-2 text-center">
+                            <p class="mb-0 text-sm font-medium">Upload Back side </p>
+                          </div>
+                          <label for="fileUpload" class="flex p-3">
+                            <div class="text-center flex flex-col w-100 justify-center items-center gap-3">
+                              <img class="opacity-25" src="./assets/img/icon/upload.svg" alt="">
+                              <p class="text-sm font-medium ">Upload Document</p>
+                              <a class="py-2 px-3 text-sm text-white rounded-xl" style="background-color: var(--primary-color);">Browse File</a>
+                            </div>
+                          </label>
+                          <input type="file" name="fileUpload" id="fileUpload" class="hidden" onClick="console.log(event)" multiple>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="upload-d border border-opacity-40 rounded-md h-100">
+                          <div class="border-b border-opacity-40 p-3 py-2 text-center">
+                            <p class="mb-0 text-sm font-medium">Upload file</p>
+                          </div>
+                          <label for="fileUpload" class="flex p-3">
+                            <div class="text-center flex flex-col w-100 justify-center items-center gap-3">
+                              <div class=" flex flex-col justify-center items-center gap-2">
+                                <img src="./assets/img/icon/Paper.svg" alt="" class="w-6 text-center">
+                                <p class="text-sm font-semibold mb-0">Filename.png</p>
+                              </div>
+                              <a class="text-xs font-medium rounded-xl flex gap-2" style="">Upladed Successfull <img src="./assets/img/icon/tick.svg" alt="">
+                              </a>
+                            </div>
+                          </label>
+                          <input type="file" name="fileUpload" id="fileUpload" class="hidden" onClick="console.log(event)" multiple>
+                        </div>
+                      </div>
                   </div>
-                  <div class="mt-3 lg:mt-1">
-                    <ul class="list-disc mb-0" style="margin-left: 18%;">
-                      <li class="mb-0 mr-10 text-green-600 font-semibold">Live</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--===== Event Auctions  =====-->
+    <!--===== Request Form Section  =====-->
     <!--===== Marquee Section  =====-->
     <section>
       <div class="marquee py-3">
@@ -330,74 +386,5 @@
     <script type="text/javascript" src="./assets/css/slick/slick.min.js"></script>
     <!-- fontawesom 6 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      $(document).ready(function() {
-        $('.banner-slick').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
-          fade: true,
-          dots: false,
-        });
-      });
-      $('.property-slick').slick({
-        infinite: true,
-        dots: false,
-        slidesToShow: 4,
-        slidesToScroll: 3,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [{
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        }, {
-          breakpoint: 769,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }, {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }]
-      })
-      $('.sold-slick').slick({
-        infinite: true,
-        dots: true,
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [{
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        }, {
-          breakpoint: 769,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }, {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }]
-      })
-    </script>
   </body>
 </html>

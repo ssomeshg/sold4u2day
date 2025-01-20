@@ -126,12 +126,21 @@ registerBtn.addEventListener('click', (e,progressCount)=>{
   verificationCode.classList.remove('hidden')
   console.log(e)
   ProgressBar.forEach((item,e)=>{
-    console.log(item)
+    if(item.id == 'step2'){
+      item.classList.add('active')
+    }
+    console.log(item,item.id)
   })
  
 })
 verifyCodeBtn.addEventListener('click',()=>{
   verificationCode.classList.add('hidden');
   documentUpload.classList.remove('hidden')
+  ProgressBar.forEach((item,e)=>{
+    if(item.id == 'step3'){
+      item.classList.add('active')
+    }
+    console.log(item,item.id)
+  })
 })
 });    

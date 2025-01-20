@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap Toggle cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-toggle/css/bootstrap-toggle.min.css" rel="stylesheet">
-    
   </head>
   <body class="body-grey">
     <!--===== TopBar  =====-->
@@ -308,8 +307,8 @@
         <div class="row">
           <div class="col-lg-3 py-5 lg:py-0 px-3 lg:px-0 mb-10">
             <!-- side links -->
-            <div class="mt-10 flex flex-col gap-3 nav nav-tabs"id="myTab" role="tablist">
-              <div class="bit-box rounded-lg b-box-g flex justify-between px-3 active"  id="details-tab" data-bs-toggle="pill" data-bs-target="#your-details" type="button" role="tab" aria-controls="your-details" aria-selected="true">
+            <div class="mt-10 flex flex-col gap-3 nav nav-tabs" id="myTab" role="tablist">
+              <div class="bit-box rounded-lg b-box-g flex justify-between px-3 active" id="details-tab" data-bs-toggle="pill" data-bs-target="#your-details" type="button" role="tab" aria-controls="your-details" aria-selected="true">
                 <div class="w-100 z-20 flex justify-between items-center">
                   <p class="text-sm font-medium mb-0">Your Details</p>
                   <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,10 +362,9 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-9 tab-content" id="myTabContent">
             <!-- Step-1 -->
-            <div class="mt-10 px-3 lg:pl-8 tab-pane fade show active"  id="your-details" role="tabpanel" aria-labelledby="details-tab">
+            <div class="mt-10 px-3 lg:pl-8 tab-pane fade show active" id="your-details" role="tabpanel" aria-labelledby="details-tab">
               <p class="text-sm font-medium mb-0 text-d">STEP 1 OF 4</p>
               <h5 class="font-semibold text-lg text-d mb-0">Your Details</h5>
               <!-- PErsonal Informations -->
@@ -545,205 +543,181 @@
               </div>
             </div>
             <!-- Step-2 -->
-          <div class="mt-10 px-3 lg:pl-8 tab-pane fade show" id="soliciator" role="tabpanel" aria-labelledby="soliciator-tab">
-            <div class="box-show flex justify-between items-center">
-              <div>
-                <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
-                <h5 class="font-semibold text-base text-d mb-0">Your Details</h5>
+            <div class="mt-10 px-3 lg:pl-8 tab-pane fade show" id="soliciator" role="tabpanel" aria-labelledby="soliciator-tab">
+              <div class="box-show flex justify-between items-center">
+                <div>
+                  <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
+                  <h5 class="font-semibold text-base text-d mb-0">Your Details</h5>
+                </div>
+                <a href="">
+                  <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+                </a>
               </div>
-
-              <a href="">
-                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
-              </a>
-            </div>
-
-            <div class="mt-3">
-              <p class="text-sm font-medium mb-0 text-d">STEP 2 OF 4</p>
-              <h5 class="font-semibold text-lg text-d mb-0">Add Solicitator Details</h5>
-            </div>
-
-            <!-- Agreement Details -->
-            <div class="mt-3 flex justify-center">
-              <div class="row w-100 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
-                <div class="col-md-12 py-2 bg-gray-100 mb-3 border-b flex justify-between items-center">
-                  <p class="mb-0 text-sm font-semibold">Agreement Details</p>
-                  <a href="" class="text-xs font-medium px-5 rounded-md py-2 text-white bg-primary">Add New</a>
-                </div>
-                <div class="col-md-12 flex flex-col mb-3">
-                  <label for="">Select Solicitor  </label>
-                  <select name="" id="">
-                    <option value="">Empty</option>
-                  </select>
-                </div>
-                <div class="col-md-12 my-3 py-5 flex gap-2 justify-end">
-                  <a href="" class="px-10 py-2 text-sm rounded-md  bg-white border border-opacity-25 text-gray-600 text-opacity-30 font-medium">Skip</a>
-                  <a href="" class="px-10 py-2 text-sm rounded-md  bg-primary  text-white font-medium">Next</a>
+              <div class="mt-3">
+                <p class="text-sm font-medium mb-0 text-d">STEP 2 OF 4</p>
+                <h5 class="font-semibold text-lg text-d mb-0">Add Solicitator Details</h5>
+              </div>
+              <!-- Agreement Details -->
+              <div class="mt-3 flex justify-center">
+                <div class="row w-100 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
+                  <div class="col-md-12 py-2 bg-gray-100 mb-3 border-b flex justify-between items-center">
+                    <p class="mb-0 text-sm font-semibold">Agreement Details</p>
+                    <a href="" class="text-xs font-medium px-5 rounded-md py-2 text-white bg-primary">Add New</a>
+                  </div>
+                  <div class="col-md-12 flex flex-col mb-3">
+                    <label for="">Select Solicitor </label>
+                    <select name="" id="">
+                      <option value="">Empty</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12 my-3 py-5 flex gap-2 justify-end">
+                    <a href="" class="px-10 py-2 text-sm rounded-md  bg-white border border-opacity-25 text-gray-600 text-opacity-30 font-medium">Skip</a>
+                    <a href="" class="px-10 py-2 text-sm rounded-md  bg-primary  text-white font-medium">Next</a>
+                  </div>
                 </div>
               </div>
             </div>
-
-          </div>
             <!-- Step-3 -->
-          <div class="mt-10 px-3 lg:pl-8 tab-pane fade show" id="agreement" role="tabpanel" aria-labelledby="agreement-tab">
-            <div class="box-show flex justify-between items-center mb-3">
-              <div>
-                <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
-                <h5 class="font-semibold text-base text-d mb-0">Your Details</h5>
-              </div>
-
-              <a href="">
-                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
-              </a>
-            </div>
-            <div class="box-show flex justify-between items-center">
-              <div>
-                <p class="text-xs font-medium mb-0 text-d">STEP 2 OF 4</p>
-                <h5 class="font-semibold text-base text-d mb-0">Soliciator Details</h5>
-              </div>
-
-              <a href="">
-                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
-              </a>
-            </div>
-
-            <div class="mt-4">
-              <p class="text-sm font-medium mb-0 text-d">STEP 3 OF 4</p>
-              <h5 class="font-semibold text-lg text-d mb-0">Agreement</h5>
-            </div>
-
-            <!-- Agreement Details -->
-            <div class="mt-3 flex justify-center">
-              <div class="row w-100 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
-                <div class="col-md-12 py-2 bg-gray-100 mb-3 border-b flex justify-between items-center">
-                  <p class="mb-0 text-sm font-semibold">Agreement Details</p>
+            <div class="mt-10 px-3 lg:pl-8 tab-pane fade show" id="agreement" role="tabpanel" aria-labelledby="agreement-tab">
+              <div class="box-show flex justify-between items-center mb-3">
+                <div>
+                  <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
+                  <h5 class="font-semibold text-base text-d mb-0">Your Details</h5>
                 </div>
-                <div class="col-md-12">
-                  <p class="mb-0 text-base font-semibold">Accept Terms & Conditions</p>
-
-                  <div class="bg-gray-50 flex gap-2 p-3 rounded-md mt-3">
-                    <input type="checkbox" name="" id="">
-                    <div class="">
-                      <p class="mb-1 text-xs font-bold">Terms & Condition 1</p>
-                      <p class="mb-0 text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint velit dolores? Adipisci, temporibus numquam aliquid accusantium consequuntur odio! In aperiam eum tempora cupiditate tempore blanditiis non eos ea. Commodi!</p>
-                    </div>
+                <a href="">
+                  <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+                </a>
+              </div>
+              <div class="box-show flex justify-between items-center">
+                <div>
+                  <p class="text-xs font-medium mb-0 text-d">STEP 2 OF 4</p>
+                  <h5 class="font-semibold text-base text-d mb-0">Soliciator Details</h5>
+                </div>
+                <a href="">
+                  <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+                </a>
+              </div>
+              <div class="mt-4">
+                <p class="text-sm font-medium mb-0 text-d">STEP 3 OF 4</p>
+                <h5 class="font-semibold text-lg text-d mb-0">Agreement</h5>
+              </div>
+              <!-- Agreement Details -->
+              <div class="mt-3 flex justify-center">
+                <div class="row w-100 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
+                  <div class="col-md-12 py-2 bg-gray-100 mb-3 border-b flex justify-between items-center">
+                    <p class="mb-0 text-sm font-semibold">Agreement Details</p>
                   </div>
-                  <div class="bg-gray-50 flex gap-2 p-3 rounded-md mt-3">
-                    <input type="checkbox" name="" id="">
-                    <div class="">
-                      <p class="mb-1 text-xs font-bold">Terms & Condition 2</p>
-                      <p class="mb-0 text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint velit dolores? Adipisci, temporibus numquam aliquid accusantium consequuntur odio! In aperiam eum tempora cupiditate tempore blanditiis non eos ea. Commodi!</p>
+                  <div class="col-md-12">
+                    <p class="mb-0 text-base font-semibold">Accept Terms & Conditions</p>
+                    <div class="bg-gray-50 flex gap-2 p-3 rounded-md mt-3">
+                      <input type="checkbox" name="" id="">
+                      <div class="">
+                        <p class="mb-1 text-xs font-bold">Terms & Condition 1</p>
+                        <p class="mb-0 text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint velit dolores? Adipisci, temporibus numquam aliquid accusantium consequuntur odio! In aperiam eum tempora cupiditate tempore blanditiis non eos ea. Commodi!</p>
+                      </div>
                     </div>
-                  </div>
-
-                  <div class="bg-gray-50 p-3 rounded-md mt-3">
-                    <p class="mb-1 text-xs font-bold">Pdf Agreement</p>
-                    <div class="bg-white p-4 flex justify-center">
-                      <img src="./assets/img/pdf.png" alt="" class="w-80 h-auto">
+                    <div class="bg-gray-50 flex gap-2 p-3 rounded-md mt-3">
+                      <input type="checkbox" name="" id="">
+                      <div class="">
+                        <p class="mb-1 text-xs font-bold">Terms & Condition 2</p>
+                        <p class="mb-0 text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint velit dolores? Adipisci, temporibus numquam aliquid accusantium consequuntur odio! In aperiam eum tempora cupiditate tempore blanditiis non eos ea. Commodi!</p>
+                      </div>
                     </div>
-                  </div>
-
-                  <div class="bg-gray-50 flex gap-2 p-3 rounded-md mt-3">
-                    <input type="checkbox" name="" id="">
-                    <div class="">
-                      <p class="mb-1 text-xs font-bold">Acceptance </p>
-                      <p class="mb-0 text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint velit dolores? Adipisci, temporibus numquam aliquid accusantium consequuntur odio! In aperiam eum tempora cupiditate tempore blanditiis non eos ea. Commodi!</p>
+                    <div class="bg-gray-50 p-3 rounded-md mt-3">
+                      <p class="mb-1 text-xs font-bold">Pdf Agreement</p>
+                      <div class="bg-white p-4 flex justify-center">
+                        <img src="./assets/img/pdf.png" alt="" class="w-80 h-auto">
+                      </div>
+                    </div>
+                    <div class="bg-gray-50 flex gap-2 p-3 rounded-md mt-3">
+                      <input type="checkbox" name="" id="">
+                      <div class="">
+                        <p class="mb-1 text-xs font-bold">Acceptance </p>
+                        <p class="mb-0 text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint velit dolores? Adipisci, temporibus numquam aliquid accusantium consequuntur odio! In aperiam eum tempora cupiditate tempore blanditiis non eos ea. Commodi!</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-12 my-3 py-5 flex gap-2 justify-end">
-              <a href="" class="px-10 py-2 text-sm rounded-md  bg-primary  text-white font-medium">Next</a>
-            </div>
-          </div>
-
-          <!-- Step-4 -->
-          <div class="mt-10 px-3 lg:pl-8 tab-pane fade show" id="payment" role="tabpanel" aria-labelledby="payment-tab">
-            <div class="box-show flex justify-between items-center mb-3">
-              <div>
-                <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
-                <h5 class="font-semibold text-base text-d mb-0">Your Details</h5>
+              <div class="col-md-12 my-3 py-5 flex gap-2 justify-end">
+                <a href="" class="px-10 py-2 text-sm rounded-md  bg-primary  text-white font-medium">Next</a>
               </div>
-
-              <a href="">
-                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
-              </a>
             </div>
-            <div class="box-show flex justify-between items-center mb-3">
-              <div>
-                <p class="text-xs font-medium mb-0 text-d">STEP 2 OF 4</p>
-                <h5 class="font-semibold text-base text-d mb-0">Soliciator Details</h5>
+            <!-- Step-4 -->
+            <div class="mt-10 px-3 lg:pl-8 tab-pane fade show" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+              <div class="box-show flex justify-between items-center mb-3">
+                <div>
+                  <p class="text-xs font-medium mb-0 text-d">STEP 1 OF 4</p>
+                  <h5 class="font-semibold text-base text-d mb-0">Your Details</h5>
+                </div>
+                <a href="">
+                  <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+                </a>
               </div>
-
-              <a href="">
-                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
-              </a>
-            </div>
-            <div class="box-show flex justify-between items-center">
-              <div>
-                <p class="text-xs font-medium mb-0 text-d">STEP 3 OF 4</p>
-                <h5 class="font-semibold text-base text-d mb-0">Agreement</h5>
+              <div class="box-show flex justify-between items-center mb-3">
+                <div>
+                  <p class="text-xs font-medium mb-0 text-d">STEP 2 OF 4</p>
+                  <h5 class="font-semibold text-base text-d mb-0">Soliciator Details</h5>
+                </div>
+                <a href="">
+                  <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+                </a>
               </div>
-
-              <a href="">
-                <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
-              </a>
-            </div>
-
-            <div class="mt-4">
-              <p class="text-sm font-medium mb-0 text-d">STEP 4 OF 4</p>
-              <h5 class="font-semibold text-lg text-d mb-0">Payment Details</h5>
-            </div>
-
-            <!-- Agreement Details -->
-            <div class="mt-3 flex justify-center">
-              <div class="row w-100 bg-white rounded-md overflow-hidden border border-opacity-25">
-
-                <div class="col-md-12 p-3">
-                  <div class="flex justify-between mb-1"> 
-                    <p class="mb-0 text-sm font-semibold">Bid Registration Amount </p>
-                    <h6 class="font-bold text-lg mb-0">$ 672829</h6>
-                  </div>
-                  <div class="flex justify-between mb-1"> 
-                    <div class="flex gap-2 items-center">
-                      <p class="mb-0 text-sm font-semibold">Legal Pack Amount </p>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input bg-green-600" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style="background-color: #8ADA10 !important ; border: 0.3px solid #8ADA10;">
+              <div class="box-show flex justify-between items-center">
+                <div>
+                  <p class="text-xs font-medium mb-0 text-d">STEP 3 OF 4</p>
+                  <h5 class="font-semibold text-base text-d mb-0">Agreement</h5>
+                </div>
+                <a href="">
+                  <img src="./assets/img/icon/arrow-dark.svg" alt="" class="w-3 h-3 mr-2">
+                </a>
+              </div>
+              <div class="mt-4">
+                <p class="text-sm font-medium mb-0 text-d">STEP 4 OF 4</p>
+                <h5 class="font-semibold text-lg text-d mb-0">Payment Details</h5>
+              </div>
+              <!-- Agreement Details -->
+              <div class="mt-3 flex justify-center">
+                <div class="row w-100 bg-white rounded-md overflow-hidden border border-opacity-25">
+                  <div class="col-md-12 p-3">
+                    <div class="flex justify-between mb-1">
+                      <p class="mb-0 text-sm font-semibold">Bid Registration Amount </p>
+                      <h6 class="font-bold text-lg mb-0">$ 672829</h6>
                     </div>
+                    <div class="flex justify-between mb-1">
+                      <div class="flex gap-2 items-center">
+                        <p class="mb-0 text-sm font-semibold">Legal Pack Amount </p>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input bg-green-600" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style="background-color: #8ADA10 !important ; border: 0.3px solid #8ADA10;">
+                        </div>
+                      </div>
+                      <h6 class="font-bold text-lg mb-0">$ 500</h6>
                     </div>
-                    <h6 class="font-bold text-lg mb-0">$ 500</h6>
+                    <div class="flex justify-between mb-1">
+                      <p class="mb-0 text-sm font-semibold">Tax </p>
+                      <h6 class="font-bold text-lg mb-0">$ 250</h6>
+                    </div>
+                    <div class="flex justify-between mb-1 mt-2 border-t py-3">
+                      <p class="mb-0 text-sm font-semibold">Total Amount </p>
+                      <h6 class="font-bold text-lg text-default mb-0">$ 673200</h6>
+                    </div>
                   </div>
-                  <div class="flex justify-between mb-1"> 
-                    <p class="mb-0 text-sm font-semibold">Tax </p>
-                    <h6 class="font-bold text-lg mb-0">$ 250</h6>
-                  </div>
-                  <div class="flex justify-between mb-1 mt-2 border-t py-3"> 
-                    <p class="mb-0 text-sm font-semibold">Total Amount </p>
-                    <h6 class="font-bold text-lg text-default mb-0">$ 673200</h6>
-                  </div>
-
-
                 </div>
               </div>
+              <div class="col-md-12 my-3 py-5 flex gap-2 justify-end">
+                <a href="" class="px-10 py-2 text-sm rounded-md bg-transparent text-black border border-black font-medium">Skip for Now</a>
+                <a href="" class="px-10 py-2 text-sm rounded-md bg-primary text-white font-medium">Pay Now</a>
+              </div>
             </div>
-            <div class="col-md-12 my-3 py-5 flex gap-2 justify-end">
-              <a href="" class="px-10 py-2 text-sm rounded-md bg-transparent text-black border border-black font-medium">Skip for Now</a>
-              <a href="" class="px-10 py-2 text-sm rounded-md bg-primary text-white font-medium">Pay Now</a>
-            </div>
-          </div>
-
-          <!-- Submit -->
-          <div class=" py-40 tab-pane fade show" id="payment" role="tabpanel" aria-labelledby="payment-tab">
-            <div class="text-center flex flex-col justify-center items-center">
-              <img src="./assets/img/tick-1.png" alt="" class="w-40">
-              <p class="text-sm text-d">Your bid registration submitted successfully & its under review
-                Kindly check the status in your dashboard</p>
-              <input type="button" value="Go To Dashboard" class="px-28 rounded-md max-w-min" id="">
+            <!-- Submit -->
+            <div class=" py-40 tab-pane fade show" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+              <div class="text-center flex flex-col justify-center items-center">
+                <img src="./assets/img/tick-1.png" alt="" class="w-40">
+                <p class="text-sm text-d">Your bid registration submitted successfully & its under review Kindly check the status in your dashboard</p>
+                <input type="button" value="Go To Dashboard" class="px-28 rounded-md max-w-min" id="">
+              </div>
             </div>
           </div>
-          </div>
-
-          
         </div>
       </div>
       </div>
@@ -881,6 +855,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap Toggle Cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
-
   </body>
 </html>
