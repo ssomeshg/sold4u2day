@@ -125,137 +125,187 @@
       </div>
     </div>
     <!--===== Navbar  =====-->
-    <!--===== Request Form Section  =====-->
-    <section class="py-9">
-      <div class="container  border-2 border-opacity-40 rounded-sm ">
-        <div class="row relative">
-          <div class="absolute v-form-img">
-            <img src="./assets/img/form-comp.svg" class="w-24" alt="">
-          </div>
-          <div class="col-lg-3 py-5 lg:py-0 px-3 lg:px-0 mb-10">
-            <!-- side links -->
-            <div class="mt-10 flex flex-col gap-3 nav nav-tabs border-b-0" id="myTab" role="tablist">
-              <div class="bit-box rounded-lg b-box-g flex justify-between px-3 active" id="details-tab" data-bs-toggle="pill" data-bs-target="#your-details" type="button" role="tab" aria-controls="your-details" aria-selected="true">
-                <div class="w-100 z-20 flex justify-between items-center">
-                  <p class="text-sm font-medium mb-0">Account Settings</p>
-                  <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7378 0.761748H5.0848C3.0048 0.753748 1.2998 2.41175 1.2508 4.49075V15.2037C1.2048 17.3167 2.8798 19.0677 4.9928 19.1147C5.0238 19.1147 5.0538 19.1157 5.0848 19.1147H13.0738C15.1678 19.0297 16.8178 17.2997 16.8028 15.2037V6.03775L11.7378 0.761748Z" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M11.4751 0.75V3.659C11.4751 5.079 12.6231 6.23 14.0431 6.234H16.7981" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M11.2881 13.3584H5.88806" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M9.24321 9.60596H5.88721" stroke="#FF7628" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-              <div class="bit-box rounded-lg b-box-g flex justify-between px-3" id="soliciator-tab" data-bs-toggle="pill" data-bs-target="#soliciator" type="button" role="tab" aria-controls="soliciator" aria-selected="false">
-                <div class="w-100 z-20 flex justify-between items-center">
-                  <p class="text-sm font-medium mb-0">Delete Account</p>
-                  <svg width="22" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="Stroke 1" d="M19.3248 9.46875C19.3248 9.46875 18.7818 16.2037 18.4668 19.0407C18.3168 20.3957 17.4798 21.1898 16.1088 21.2148C13.4998 21.2618 10.8878 21.2648 8.27979 21.2098C6.96079 21.1828 6.13779 20.3788 5.99079 19.0478C5.67379 16.1858 5.13379 9.46875 5.13379 9.46875" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path id="Stroke 3" d="M20.708 6.24023H3.75" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path id="Stroke 5" d="M17.4406 6.23998C16.6556 6.23998 15.9796 5.68498 15.8256 4.91598L15.5826 3.69998C15.4326 3.13898 14.9246 2.75098 14.3456 2.75098H10.1126C9.53358 2.75098 9.02558 3.13898 8.87558 3.69998L8.63258 4.91598C8.47858 5.68498 7.80258 6.23998 7.01758 6.23998" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    
-                </div>
+    <!--===== My Biddings  =====-->
+    <section class="py-10 pb-4">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-3 items-center">
+                <img src="./assets/img/icon/Arrow-Left.svg" alt="" class="w-4 h-auto">
+                <p class="text-xl font-semibold mb-0">My Biddings (3)</p>
               </div>
 
-
-            </div>
-          </div>
-          <div class="col-lg-9 bg-white rounded-lg rounded-l-none py-10 px-5">
-            <!-- Personal Details -->
-            <div class="r-form-head">
-              <div class="row">
-                <h4 class="font-semibold text-xl text-default p-0 m-0">Profile</h4>
-              </div>
-              <div class="row py-2 mt-4 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
-                <div class="col-md-12 pt-2 mb-3 flex justify-between items-center">
-                  <p class="mb-0 text-sm font-semibold">Personal Details</p>
-                  <a href=""><img src="./assets/img/icon/edit.svg" alt="" class="w-4"></a>
-                </div>
-                <div class="col-md-6 flex flex-col mb-3">
-                    <label for="">First Name</label>
-                    <input type="text" class="bg-transparent">
-                  </div>
-                  <div class="col-md-6 flex flex-col mb-3">
-                    <label for="">Last Name</label>
-                    <input type="text" class="bg-transparent">
-                  </div>
-                  <div class="col-md-6 flex flex-col mb-3">
-                    <label for="">Mobile Number</label>
-                    <input type="tel" class="bg-transparent">
-                  </div>
-                  <div class="col-md-6 flex flex-col mb-3">
-                    <label for="">Email</label>
-                    <input type="email" class="bg-transparent">
-                  </div>
-                <div class="col-md-6 flex flex-col mb-3">
-                  <label for="">Password</label>
-                  <input type="password" class="bg-transparent">
-                </div>
-              </div>
-            </div>
-            <!-- Edit Document -->
-            <div class="r-form-head">
-                <div class="row py-3 mt-4 r-form-field bg-white rounded-md overflow-hidden border border-opacity-25">
-                    <div class="col-md-12 pt-2 mb-3 flex justify-between items-center">
-                      <p class="mb-0 text-sm font-semibold">Edit Document</p>
-                      <a href=""><img src="./assets/img/icon/edit.svg" alt="" class="w-4"></a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="upload-d border border-opacity-40 rounded-md">
-                          <div class="border-b border-opacity-40 p-3 py-2 text-center">
-                            <p class="mb-0 text-sm font-medium">Upload Front side</p>
-                          </div>
-                          <label for="fileUpload" class="flex p-3">
-                            <div class="text-center flex flex-col w-100 justify-center items-center gap-3">
-                              <img class="opacity-25" src="./assets/img/icon/upload.svg" alt="">
-                              <p class="text-sm font-medium ">Drag and drop files here <br> or </p>
-                              <a class="py-2 px-3 text-sm text-white rounded-xl form-btn cursor-pointer" >Browse File</a>
-                            </div>
-                          </label>
-                          <input type="file" name="fileUpload" id="fileUpload" class="hidden" onClick="console.log(event)" multiple>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="upload-d border border-opacity-40 rounded-md h-100">
-                          <div class="border-b border-opacity-40 p-3 py-2 text-center">
-                            <p class="mb-0 text-sm font-medium">Upload Back side </p>
-                          </div>
-                          <label for="fileUpload" class="flex p-3">
-                            <div class="text-center flex flex-col w-100 justify-center items-center gap-3">
-                              <img class="opacity-25" src="./assets/img/icon/upload.svg" alt="">
-                              <p class="text-sm font-medium ">Upload Document</p>
-                              <a class="py-2 px-3 text-sm text-white rounded-xl form-btn cursor-pointer"    >Browse File</a>
-                            </div>
-                          </label>
-                          <input type="file" name="fileUpload" id="fileUpload" class="hidden" onClick="console.log(event)" multiple>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="upload-d border border-opacity-40 rounded-md h-100">
-                          <div class="border-b border-opacity-40 p-3 py-2 text-center">
-                            <p class="mb-0 text-sm font-medium">Upload file</p>
-                          </div>
-                          <label for="fileUpload" class="flex p-3">
-                            <div class="text-center flex flex-col w-100 justify-center items-center gap-3">
-                              <div class=" flex flex-col justify-center items-center gap-2">
-                                <img src="./assets/img/icon/Paper.svg" alt="" class="w-6 text-center">
-                                <p class="text-sm font-semibold mb-0">Filename.png</p>
-                              </div>
-                              <a class="text-xs font-medium rounded-xl flex gap-2" style="">Upladed Successfull <img src="./assets/img/icon/tick.svg" alt="">
-                              </a>
-                            </div>
-                          </label>
-                          <input type="file" name="fileUpload" id="fileUpload" class="hidden" onClick="console.log(event)" multiple>
-                        </div>
-                      </div>
-                  </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
-    <!--===== Request Form Section  =====-->
+    <!--===== My Biddings  =====-->
+    <!--=====  Lots Items  =====-->
+    <section class="">
+      <div class="container">
+
+        <!-- Lots Item Starts -->
+        <div>
+          <div class="">
+            <div class="row mb-3 px-3">
+              <div class="lg:flex border rounded-xl p-0">
+                <div class="col-lg-3 p-0">
+                  <div class="lot-img relative overflow-hidden h-100">
+                    <img src="./assets/img/live-property/lot-1.svg" alt="" class="w-100 h-100 rounded-xl">
+                    <div class="lot-wishlist absolute top-0 flex justify-between items-center w-100 p-3 z-20">
+                      <a href="" class=" bg-white place-content-center text-xs font-bold py-2 px-3 rounded-md">For Sale</a>
+                      <a href="" class="bg-white w-10 h-10 rounded-full text-black flex items-center justify-center">
+                        <i class="fa-solid fa-heart" class="text-transparent"></i>
+                      </a>
+                    </div>
+                    <div class="absolute bottom-5 w-100 z-20 text-center text-white">
+                      <p class="text-2xl font-semibold uppercase">Lot 1</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="col-lg-6 px-3 py-4">
+                  <div class="grid gap-3 border-b border-opacity-60 pb-10">
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-2">
+                        <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max flex gap-1 items-center">
+                          <img src="./assets/img/icon/garage.svg" alt="">Apartment </a>
+                        <a href="" class="border border-opacity-45 text-sm font-semibold px-3 py-1 rounded-lg min-w-max">Modern Method</a>
+                      </div>
+                      <span class="w-2 h-2 bg-green-500 rounded-full block"></span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-0">Commercial Property for Sale</h3>
+                    <div class="text-base font-medium text-black-400 flex item-center gap-1">
+                      <img src="./assets/img/icon/location-1.svg" class="" alt=""> Neal's Yard , Covent Garden , Province London WC2H 9LD
+                    </div>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <div class="flex items-center gap-1 pr-2 border-r ">
+                        <img src="./assets/img/icon/bed-double.svg" class="w-4" alt="">
+                        <p class="mb-0 text-sm font-normal">4 Beds</p>
+                      </div>
+                      <div class="flex items-center gap-1 pr-2 border-r">
+                        <img src="./assets/img/icon/bath.svg" class="w-5" alt="">
+                        <p class="mb-0 text-sm font-normal">2 Bathrooms</p>
+                      </div>
+                      <div class="flex items-center gap-1 pr-2 border-r">
+                        <img src="./assets/img/icon/feet-sq.svg" class="w-5" alt="">
+                        <p class="mb-0 text-sm font-normal">1200 sq ft</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid md:flex justify-between pt-8">
+                    <div class="flex gap-2 items-center">
+                      <img src="./assets/img/icon/Calendar.svg" alt="" class="w-5 h-5">
+                      <p class="mb-0 text-base font-semibold min-w-max">07 Nov 2024 ,5:00 PM</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                      <p class="mb-0 grey-text text-xs">Posted by</p>
+                      <a href="" class="flex gap-2 p-2 items-center bg-white text-sm font-medium shadow-md border border-opacity-80 rounded-full ">
+                        <img src="./assets/img/icon/gps-link.svg" alt="">GPS Link </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 p-3">
+                  <!-- <div class="relative bg-no-repeat bg-cover" style="background-image: url(./assets/img/clip-box.svg);"><div class=" top-0 z-10">
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam odit, voluptatem eligendi ipsam sint quas laborum quos dignissimos! Porro fugit reprehenderit omnis similique esse sed illum magni modi ipsam id. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem tempora repudiandae quod ad, et nulla voluptates ullam quibusdam quae eos, sed natus excepturi nostrum eaque quos dolorem obcaecati ducimus?
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sequi, nesciunt error laboriosam odit laborum accusamus dignissimos exercitationem nihil aliquid possimus nisi voluptas dicta nemo optio maxime esse doloribus enim.
+                              </div></div> -->
+                  <div class="lot-price-box " style="min-height:300px;">
+                    <div class="clip-bg flex justify-end" style="width: 99%;height: 97%;left: 8px;top: 16px;">
+                        <div class="clip-counter text-center py-4 px-7">
+                          <div class="flex gap-3 text-white">
+                            <div class="flex gap-2 items-center text-center">
+                              <img src="./assets/img/icon/bid-soon.svg" alt="">
+                              <h4 class="counter text-lg font-light mb-0">Auction Ended</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="clip-path"></div>
+                    <div class="clip-box p-3 flex flex-col justify-between">
+                      <ul class="flex flex-col gap-2 justify-end">
+                        <li class="text-sm font-medium grey-text text-end">Starting Bid <span class="text-base font-bold ml-2">$78390</span>
+                        </li>
+                        <li class="text-sm font-medium grey-text text-end">Highest Bid <span class="text-base font-bold ml-2">$78390</span>
+                        </li>
+                      </ul>
+                      <div class="bg-green-100 rounded-lg p-2 px-3 mb-2 flex justify-center gap-2 items-center">
+                        <img src="./assets/img/winner.png"  alt="">
+                        <p class="mb-0 text-sm font-semibold text-green-600">YOU WIN</p>
+                    </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Last Bid History -->
+         <div class="bid-history grid md:flex gap-3 md:gap-2 py-4">
+            <div class="flex flex-col gap-1 pr-4 pl-2 border-b md:border-r md:border-b-0">
+                <div class="flex gap-2 item-center"><img src="./assets/img/icon/Wallet.svg" alt=""><p class="mb-0 font-bold ">$88390</p></div>
+                <p class="text-xs font-semibold mb-0">07 Nov 2024 05:00 PM</p>
+            </div>
+            <div class="flex flex-col gap-1 pr-4 pl-2 border-b md:border-r md:border-b-0">
+                <div class="flex gap-2 item-center"><img src="./assets/img/icon/Wallet.svg" alt=""><p class="mb-0 font-bold ">$88390</p></div>
+                <p class="text-xs font-semibold mb-0">07 Nov 2024 05:00 PM</p>
+            </div>
+            <div class="flex flex-col gap-1 pr-4 pl-2 border-b md:border-r md:border-b-0">
+                <div class="flex gap-2 item-center"><img src="./assets/img/icon/Wallet.svg" alt=""><p class="mb-0 font-bold ">$88390</p></div>
+                <p class="text-xs font-semibold mb-0">07 Nov 2024 05:00 PM</p>
+            </div>
+            <div class="flex flex-col gap-1 pr-4 pl-2 border-b md:border-r md:border-b-0">
+                <div class="flex gap-2 item-center"><img src="./assets/img/icon/Wallet.svg" alt=""><p class="mb-0 font-bold ">$88390</p></div>
+                <p class="text-xs font-semibold mb-0">07 Nov 2024 05:00 PM</p>
+            </div>
+            <div class="flex flex-col gap-1 pr-4 pl-2 border-b md:border-r md:border-b-0">
+                <div class="flex gap-2 item-center"><img src="./assets/img/icon/Wallet.svg" alt=""><p class="mb-0 font-bold ">$88390</p></div>
+                <p class="text-xs font-semibold mb-0">07 Nov 2024 05:00 PM</p>
+            </div>
+         </div>
+
+         <!-- Bid Table -->
+          <div class="border rounded-lg overflow-hidden my-4">
+            <table class="w-100 text-center min-w-max overflow-x-scroll">
+                <thead class="text-xs text-gray-500 font-medium bg-gray-100 min-w-max overflow-x-scroll">
+                    <tr>
+                        <td>NO</td>
+                        <td>BID DATE</td>
+                        <td>BID TIME</td>
+                        <td>AMOUNT BID</td>
+                        <td>TYPE</td>
+                        <td>STATUS</td>
+                    </tr>
+                </thead>
+                <tbody class="text-xs text-black font-medium bg-white">
+                    <tr class="border-b" style="line-height: 40px;">
+                        <td>01</td>
+                        <td>o1-07-024</td>
+                        <td>04:00 - 05:30 PM</td>
+                        <td>GBP XXXXX</td>
+                        <td>Manual</td>
+                        <td>Me</td>
+                    </tr>
+                    <tr class="border-b" style="line-height: 40px;">
+                        <td>01</td>
+                        <td>o1-07-024</td>
+                        <td>04:00 - 05:30 PM</td>
+                        <td>GBP XXXXX</td>
+                        <td>Manual</td>
+                        <td>Me</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+      </div>
+    </section>
+    <!--=====  Lots Items  =====-->
     <!--===== Marquee Section  =====-->
     <section>
       <div class="marquee py-3">

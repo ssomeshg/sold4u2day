@@ -144,3 +144,38 @@ verifyCodeBtn.addEventListener('click',()=>{
   })
 })
 });    
+
+
+// live auction lots animation
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".auction-tabs li");
+  const glider = document.querySelector(".glider");
+
+  // Function to update the glider position and width
+  const updateGlider = (activeTab) => {
+    const tabWidth = activeTab.offsetWidth;
+    const tabLeft = activeTab.offsetLeft;
+
+    // Set the glider width and position dynamically
+    glider.style.width = `${tabWidth}px`;
+    glider.style.transform = `translateX(${tabLeft}px)`;
+  };
+
+  // Initial setup for the glider
+  const initialActiveTab = document.querySelector(".auction-tabs li.active");
+  if (initialActiveTab) updateGlider(initialActiveTab);
+
+  // Add event listeners to each tab
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      // Remove active class from all tabs
+      tabs.forEach((t) => t.classList.remove("active"));
+
+      // Add active class to the clicked tab
+      tab.classList.add("active");
+
+      // Update the glider position and width
+      updateGlider(tab);
+    });
+  });
+});

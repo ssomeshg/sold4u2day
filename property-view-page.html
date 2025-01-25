@@ -342,11 +342,18 @@
               <div class="floor-plan box-show">
                 <h6 class="text-sm font-semibold text-black">Floor Plan</h6>
                 <div class="floor-plan-img text-center">
-                  <div class="e-image mt-2 flex justify-center p-4">
+                  <div class="e-image mt-2 flex flex-col items-center justify-center p-4">
                     <img src="./assets/img/property-detail-images/plan.png" alt="">
+                    <div class="mt-5">
+                      <p class="mb-0">Plan A</p>
+                    </div>
                   </div>
-                  <div class="e-image mt-2 flex justify-center p-4">
+                  <div class="e-image mt-2 flex flex-col items-center justify-center p-4">
+                    
                     <img src="./assets/img/property-detail-images/plan.png" alt="">
+                    <div class="mt-5">
+                      <p class="mb-0"> Plan B</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -636,6 +643,8 @@
           arrows: true,
           fade: true,
           dots: false,
+          autoplay:true,
+          autoplayspeed:1500,
         });
       })
       $('.floor-plan-img').slick({

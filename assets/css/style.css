@@ -62,6 +62,59 @@
   .grey-text {
     color: #5b6a84;
   }
+  .shadow-btn{
+    color: var(--primary-color); 
+    box-shadow: var(--primary-color) 4px 4px 0px;
+    transition: all 0.3s linear;
+  }
+  .shadow-btn:hover{
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    box-shadow:#fff 4px 4px 0px !important;
+    transition: all 0.3s linear;
+  }
+  .form-btn{
+    background-color: var(--primary-color);
+     transition: all 0.2s linear;
+  }
+  input[type=button]:hover{
+    background-color: #000;
+    transition: all 0.2s linear;
+  }
+  .form-btn:hover{
+    background-color: #000;
+     transition: all 0.2s linear;
+  }
+  .form-b-btn:hover{
+    font-weight: 500 !important;
+    border:1px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    transition: all 0.2s linear;
+
+  }
+    .register-btn{
+      background-color: #000;
+      transition: all 0.2s linear;
+    }
+  .register-btn:hover{
+    transition: all 0.2s linear;
+    background-color: var(--primary-color) !important;
+  }
+  /* Nav bar CSS */
+  .main-menubar li a{
+    color: #fff;
+    transition: all 0.2s ease-out;
+  }
+  .main-menubar li a:hover{
+    color: var(--primary-color) !important;
+    transition: all 0.2s ease-out;
+  }
+  .navbar-div{
+    position: sticky;
+    /* position: -webkit-sticky;
+    display: -webkit-flex;
+    overflow-y: hidden; */
+  }
   /* Banner CSS */
   .banner {
     min-height: 85vh;
@@ -158,6 +211,7 @@
     visibility: visible !important;
     transition: 0.2s all ease-in;
     transform: translateY(58px);
+    z-index: 1111;
   }
   .login-submenu {
     opacity: 0;
@@ -199,6 +253,8 @@
   }
   .r-carousel .slick-dots li{
     margin: 0px;
+    width: 13px;
+    height: 15px;
   }
   /* Youtube Video Section */
   
@@ -242,7 +298,12 @@
   }
   
   /* Event Auction CSS */
-  
+  .e-auction a:hover{
+    background:var(--primary-color) !important;
+    border: var(--primary-color) !important;
+    color: #fff !important;
+    transition: all 0.2s ease-out;
+  }
   .auction-date {
     border-left: 10px solid var(--primary-color);
     background-color: #fde0d7;
@@ -280,11 +341,51 @@
     opacity: 100%;
     visibility: visible;
   }
-  .live-auction-times .auction-items .auction-time.active {
+  /* .live-auction-times .auction-items .auction-time.active{
     border: 1px solid var(--primary-color);
     border-radius: 100px;
     color: var(--primary-color);
     background: linear-gradient(180deg, #ffe8dd, #ffede4);
+    animation: movebar 0.3s ease-in;
+  }
+  @keyframes movebar {
+    0%{
+      transform: translateX(-80%);
+    }
+  } */
+/* 
+  .live-auction-times .auction-items .auction-time.active::before{
+    content: '';
+    position: absolute;
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+    height: 100%;
+    left: 0;
+    width: 323.73px;
+    color: var(--primary-color);
+    background: linear-gradient(180deg, #ffe8dd, #ffede4);
+    animation: movebar 0.3s ease-in;
+  }
+  @keyframes movebar {
+    0%{
+      transform: translateX(-80%);
+    }
+  } */
+  .live-auction-times .auction-items .auction-time.active .auction-active{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 38px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+    color: var(--primary-color);
+    /* background: linear-gradient(180deg, #ffe8dd, #ffede4); */
+    animation: movebar 0.3s ease-in;
+  }
+  @keyframes movebar {
+    0%{
+      transform: translateX(-80%);
+    }
   }
   .live-auction-times .auction-items .auction-time {
     border: 1px solid #e4e8ed;
@@ -318,7 +419,7 @@
   }
   .lot-price-box {
     position: relative;
-    min-height: 330px;
+    min-height: 290px;
     height: 100%;
     max-height: min-content;
     width: 100%;
@@ -1084,13 +1185,29 @@
     right: -33px;
     top: -13px;
     border: 1px solid #ff464624;
+   
+  }
+  .b-box-g.active svg path {
+    stroke: var(--primary-color);
   }
   .b-box-g svg {
     margin-right: 8px;
   }
-  
+  @media (max-width:1338px) {
+    .lot-price-box{
+       min-height: 260px;
+    }
+  }
   /* Dashboard CSS */
-  
+  .d-icon{
+    transition: all 0.3s ease-in-out;
+
+  }
+  .d-btn:hover .d-icon{
+    transform: translateX(10px);
+    transition: all 0.3s ease-in-out;
+    transition-behavior: inherit;
+  }
   .boarding-circle::after {
     content: "";
     position: absolute;
@@ -1101,4 +1218,198 @@
     left: 7px;
     top: -39px;
   }
+  /* Auction Page CSS */
+
+  .auction-table .title{
+    font-size: 12px;
+    font-weight: 500;
+    color: #435572;
+    display: flex;
+    gap: 10px;
+  }
+   .auction-table table,tr,
+   .auction-address-table table,tr{
+    width: 100%;
+    line-height: 35px;
+   }
+  .auction-table .auction-details{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+  }
+ 
   
+  .auction-address-table thead{
+    background-color: #F5F7FA;
+    font-size: 12px;
+    font-weight: 500 !important;
+    color: #435572;
+  }
+  .auction-address-table tbody{
+    font-size: 12px;
+    font-weight: 500 !important;
+    color: #000;
+  }
+
+  .auction-tabs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0.75rem;
+    border-radius: 99px;
+  }
+  .auction-tabs ul::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .auction-tabs ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    gap: 10px;
+  }
+  
+  .auction-tabs li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    height: 38px;
+    min-width: max-content;
+    padding: 0 1rem; /* Allows dynamic content width */
+    border-radius: 99px;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+    border: 1px solid #e4e8ed;
+    border-radius: 100px;
+    color: #808080;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+
+
+
+  
+  .auction-tabs li.active {
+    color: var(--primary-color);
+  }
+  
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.75rem;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    transition: 0.15s ease-in;
+  }
+  .auction-tabs li span{
+    display: none;
+  }
+  .auction-tabs li.active span{
+    display: block;
+  }
+  .auction-tabs li.active{
+    border: none;
+  }
+  .auction-tabs li.active .notification {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .glider {
+    position: absolute;
+    height: 38px;
+    background: linear-gradient(180deg, #ffe8dd, #ffede4);
+    z-index: 1;
+    border: 1px solid var(--primary-color);
+
+    color: #000;
+    border-radius: 99px;
+    transition: 0.25s ease-out;
+  }
+  
+  /* @media (max-width: 700px) {
+    .auction-tabs {
+      transform: scale(0.6);
+    }
+  }
+   */
+
+   
+  @media(max-width:375px){
+    .about{
+      height: 100%;
+    }
+    .about-section{
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .about .para p {
+      padding-top: 20px;
+      color: white;
+      font-size: 12px;
+      margin-bottom: -30px;
+      padding-left: 10px;
+      padding-right: 10px;
+     
+    }
+    .about-img {
+      margin-bottom: 10px;
+    }
+    .objects{
+      flex-direction: column;
+      padding: 30px;
+    }
+    .contact{
+      height: 100%;
+    }
+    .contact-us{
+      flex-direction: column;
+    }
+  
+  }
+  @media(max-width:425px){
+    .about{
+      height: 100%;
+    }
+    .about-section{
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .about .para p {
+      padding-top: 20px;
+      color: white;
+      font-size: 12px;
+      margin-bottom: -30px;
+      padding-left: 10px;
+      padding-right: 10px;
+     
+    }
+    .about-img {
+      margin-bottom: 10px;
+    }
+    .objects{
+      flex-direction: column;
+      padding: 30px;
+    }
+    .contact{
+      height: 100%;
+    }
+    .contact-us{
+      flex-direction: column;
+    }
+   
+  }
