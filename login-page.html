@@ -237,7 +237,7 @@
                 </ul>
               </div>
               <!-- Login Form -->
-              <div class="r-form-a ">
+              <div class="r-form-a">
                 <p class="text-lg font-bold"> Login Info</p>
                 <form class="r-form-field" action="" method="post">
                   <div class="row">
@@ -408,6 +408,22 @@
                         </label>
                         <input type="file" name="fileUpload" id="fileUpload" class="hidden" onClick="console.log(event)" multiple>
                       </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 text-center">
+                      <p class="text-lg font-bold text-center">(OR)</p>
+                      <a class="py-2 px-3 text-sm text-white rounded-xl selfi-btn cursor-pointer flex gap-2 justify-center items-center" style="background-color: var(--primary-color);"><i class="fa-solid fa-camera"></i> TAKE A SELFI</a>
+                      <div class="modal-selfi fixed hidden">
+                        <video id="video" width="640" height="480" autoplay></video>
+                        <div id="capture">
+                          <i class="fa-solid fa-camera"></i>
+                        </div>
+                      </div>
+                        <div class="mt-5">
+                          <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+                          <img id="selfie" class="hidden" width="640" height="480" alt="Your Selfie">
+                        </div>
                     </div>
                   </div>
                   <div class="col-md-12 flex flex-row justify-between pt-20 border-b pb-2">

@@ -757,20 +757,6 @@
     background-color: var(--primary-color);
     border-radius: 100px;
   }
-  .more-text {
-    display: none; 
-  }
-  
-  .read-more {
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .read-more:hover {
-    text-decoration: underline;
-  }
-  
   .box-show {
     background-color: #ffffff;
     border: 1px solid #c8cdd6;
@@ -1808,41 +1794,4 @@
       flex-direction: column;
     }
    
-  }
-
-  /* Uplaod Document Selfi */
-  .modal-selfi{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    border-radius: 3px;
-    overflow: hidden;
-    background: #00000033;
-    padding: 11px;
-    backdrop-filter: blur(10px);
-  }
-  #capture{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--primary-color);
-    color: #fff;
-    font-size: x-large;
-    border-radius: 50px;
-    transition: all 0.3s linear;
-  }
-  #capture:hover{
-    background: transparent;
-    color: var(--primary-color);
-    transition: all 0.3s linear;
   }

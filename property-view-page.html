@@ -289,29 +289,34 @@
             <!-- Property Details -->
             <div class="pt-3 flex flex-col gap-3">
               <div class="property-details-buttons">
-                <ul class="p-0 flex flex-wrap gap-2 mb-0">
+                <ul class="p-0 flex flex-wrap gap-2 mb-0 nav nav-pills" id="pills-tab" role="tablist">
                   <li>
-                    <a href="" class="active py-4 px-4 rounded-xl text-sm font-medium">Property Overview</a>
+                    <a href="" class="active py-4 px-4 rounded-xl text-sm font-medium" id="property-tab" data-bs-toggle="pill" data-bs-target="#your-property" type="button" role="tab" aria-controls="your-property" aria-selected="true">Property Overview</a>
                   </li>
                   <li>
-                    <a href="" class="py-4 px-4 rounded-xl text-sm font-medium">Specification & Details</a>
+                    <a href="" class="py-4 px-4 rounded-xl text-sm font-medium" id="specifications-tab" data-bs-toggle="pill" data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="true">Specification & Details</a>
                   </li>
                   <li>
-                    <a href="" class="py-4 px-4 rounded-xl text-sm font-medium">Energy Certificate</a>
+                    <a href="" class="py-4 px-4 rounded-xl text-sm font-medium" id="certify-tab" data-bs-toggle="pill" data-bs-target="#certify" type="button" role="tab" aria-controls="certify" aria-selected="true">Energy Certificate</a>
                   </li>
                   <li>
-                    <a href="" class="py-4 px-4 rounded-xl text-sm font-medium">Floor Plan</a>
+                    <a href="" class="py-4 px-4 rounded-xl text-sm font-medium" id="floorplan-tab" data-bs-toggle="pill" data-bs-target="#floorplan" type="button" role="tab" aria-controls="floorplan" aria-selected="true">Floor Plan</a>
                   </li>
                   <li>
-                    <a href="" class="py-4 px-4 rounded-xl text-sm font-medium">Mapview</a>
+                    <a href="" class="py-4 px-4 rounded-xl text-sm font-medium" id="mapbox-tab" data-bs-toggle="pill" data-bs-target="#mapbox" type="button" role="tab" aria-controls="mapbox" aria-selected="true">Mapview</a>
                   </li>
                 </ul>
               </div>
-              <div class="p-view box-show ">
-                <p class="text-sm font-normal mb-0">GPS Link Estate offers a commercial property located half a mile northwest of Birkenhead town centre, at the intersection of Beckwith Street and Aspinall Street. The surrounding area is predominantly residential, showcasing a mix of period terraced homes and local authority semi-detached and terraced properties. <a href="">Read more</a>
+              <div class="tab-content" id="myTabContent">
+              <div class="p-view box-show tab-pane fade show active" id="your-property" role="tabpanel" aria-labelledby="property-tab">
+                <p class="text-sm font-normal mb-0">
+                  GPS Link Estate offers a commercial property located half a mile northwest of Birkenhead town centre, at the intersection of Beckwith Street and Aspinall Street. The surrounding area is predominantly residential, showcasing a mix of period terraced homes and local authority semi-detached and terraced properties.
+                  <span class="more-text"> This area benefits from nearby transport links, schools, and amenities, making it an ideal location for commercial ventures.</span>
+                  <a href="#" class="read-more">Read more</a>
                 </p>
               </div>
-              <div class="specifications-d box-show">
+              
+              <div class="specifications-d box-show tab-pane fade show" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
                 <h6 class="text-sm font-semibold text-black">Specification & Details</h6>
                 <div class="spec-list flex">
                   <ul class="list-disc mb-0">
@@ -327,7 +332,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="e-certify box-show">
+              <div class="e-certify box-show tab-pane fade show" id="certify" role="tabpanel" aria-labelledby="certify-tab">
                 <h6 class="text-sm font-semibold text-black">Energy Certificate</h6>
                 <div class="e-image mt-2 flex justify-center">
                   <img src="./assets/img/property-detail-images/energy-certificate.png" style="width:30%;cursor:zoom-in" onclick="showModal()">
@@ -339,7 +344,7 @@
                   </div>
                 </div>
               </div>
-              <div class="floor-plan box-show">
+              <div class="floor-plan box-show tab-pane fade show" id="floorplan" role="tabpanel" aria-labelledby="floorplan-tab">
                 <h6 class="text-sm font-semibold text-black">Floor Plan</h6>
                 <div class="floor-plan-img text-center">
                   <div class="e-image mt-2 flex flex-col items-center justify-center p-4">
@@ -357,12 +362,13 @@
                   </div>
                 </div>
               </div>
-              <div class="map box-show">
+              <div class="map box-show tab-pane fade show" id="mapbox" role="tabpanel" aria-labelledby="mapbox-tab">
                 <h6 class="text-sm font-semibold text-black">Map View</h6>
                 <div class="e-image mt-2 flex justify-center">
                   <img src="./assets/img/property-detail-images/map.png" alt="" class="w-100">
                 </div>
               </div>
+            </div>
             </div>
             <!-- Property Details -->
           </div>
@@ -375,14 +381,11 @@
               </div>
               <div class="property-bit"></div>
               <div class="property-bit-box p-3 flex flex-col gap-2">
-                <div>
-                  <a href="" class="flex justify-end items-center gap-1 text-xs font-medium opacity-40">
-                    <img src="./assets/img/icon/Show.svg" alt=""> 80 Watchlist </a>
-                </div>
+
                 <ul class="flex lg:grid xl:flex gap-2 justify-between p-0 relative">
-                  <li class="text-sm font-medium grey-text text-end flex items-center gap-2 min-w-max">Current Bid <span class="text-2xl text-black font-bold ml-2">$78390</span>
+                  <li class="text-xs lg:text-sm font-medium grey-text text-end flex items-center gap-2 min-w-max">Current Bid <span class="text-xl lg:text-2xl text-black font-bold ml-2">$78390</span>
                   </li>
-                  <li class="relative text-sm font-medium grey-text text-end flex items-center gap-2 min-w-max">Last Bid <span class="text-2xl text-black font-bold ml-2">$78390</span>
+                  <li class="relative text-xs lg:text-sm font-medium grey-text text-end flex items-center gap-2 min-w-max">Last Bid <span class="text-xl lg:text-2xl text-black font-bold ml-2">$78390</span>
                     <a class="bid-dropdown-btn" style="opacity: 0.5;">
                       <img src="./assets/img/icon/arrow-down.svg" alt="">
                     </a>
@@ -402,6 +405,10 @@
                     </ul>
                   </div>
                 </ul>
+                <div>
+                  <a href="" class="flex justify-end items-center gap-1 text-xs font-medium opacity-40">
+                    <img src="./assets/img/icon/Show.svg" alt=""> 80 Watchlist </a>
+                </div>
                 <div class="property-input items-center rounded-full py-2 px-3 mb-2">
                   <input type="text" class="w-100 text-sm font-medium bg-transparent focus:outline-none" placeholder="Enter amount">
                   <a href="" class="min-w-max px-3 py-2 text-xs font-medium bg-black flex justify-center items-center rounded-full text-white">Bid Now</a>
