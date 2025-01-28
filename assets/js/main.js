@@ -98,19 +98,21 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // property Details Read more
 const readMore = document.querySelector('.read-more')
+document.addEventListener("DOMContentLoaded",()=>{
 
-readMore.addEventListener('click', function (e) {
-  e.preventDefault(); // Prevent the default anchor behavior
-  const moreText = document.querySelector('.more-text');
-  const readMoreLink = e.target;
-
-  if (moreText.style.display === 'none' || moreText.style.display === '') {
-    moreText.style.display = 'inline'; // Show the additional text
-    readMoreLink.textContent = 'Read less'; // Change link text
-  } else {
-    moreText.style.display = 'none'; // Hide the additional text
-    readMoreLink.textContent = 'Read more'; // Reset link text
-  }
+  readMore.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent the default anchor behavior
+    const moreText = document.querySelector('.more-text');
+    const readMoreLink = e.target;
+  
+    if (moreText.style.display === 'none' || moreText.style.display === '') {
+      moreText.style.display = 'inline'; // Show the additional text
+      readMoreLink.textContent = 'Read less'; // Change link text
+    } else {
+      moreText.style.display = 'none'; // Hide the additional text
+      readMoreLink.textContent = 'Read more'; // Reset link text
+    }
+  });
 });
 
 //   Youtube Video JS

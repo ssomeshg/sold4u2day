@@ -67,7 +67,7 @@
     </nav>
     <!--===== TopBar  =====-->
     <!--===== Navbar  =====-->
-    <div class="bg-secondary sticky top-0 z-50  w-100">
+    <div class="navbar-div bg-secondary top-0 z-50 w-100">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -77,33 +77,56 @@
                   <img src="./assets/img/logo.png" alt="" class="w-20">
                 </a>
               </div>
-              <div class="text-white hidden lg:block">
-                <ul class="flex gap-6 mb-0 p-0">
+              <div class="text-white flex flex-row lg:block">
+                <ul class="flex lg:gap-6 px-3 mb-0 lg:p-0 main-menubar">
                   <li>
-                    <a href="index.html" class="block text-sm" style="line-height: 5.5rem;">Home</a>
+                    <a href="index.html" class="block text-sm">Home</a>
                   </li>
-                  <li>
-                    <a href="live-event-auction.html" class="flex gap-2 items-center text-sm " style="line-height: 5.5rem;">Auction <img src="./assets/img/icon/arrow.svg" alt="">
+                  <li class="nav-item">
+                    <a href="" class="flex gap-2 items-center text-sm ">Auction <img src="./assets/img/icon/arrow.svg" alt="">
                     </a>
+                    <div class="nav-list">
+                      <div class="spose relative"></div>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Timed Auction</a>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Current Auction</a>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Future Auction</a>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Past Auction</a>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Unsold Auction</a>
+                      
+                    </div>
                   </li>
-                  <li>
-                    <a href="" class="flex gap-2 items-center text-sm" style="line-height: 5.5rem;">Auction Guides <img src="./assets/img/icon/arrow.svg" alt="">
+                  <li class="nav-item">
+                    <a href="" class="flex gap-2 items-center text-sm">Auction Guides <img src="./assets/img/icon/arrow.svg" alt="">
                     </a>
+                    <div class="nav-list">
+                      <div class="spose relative"></div>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Auction Buying Guides</a>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Auction Selling Guides</a>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Timed Auction Guides</a>                      
+                    </div>
                   </li>
-                  <li>
-                    <a href="" class="flex gap-2 items-center text-sm" style="line-height: 5.5rem;">Services <img src="./assets/img/icon/arrow.svg" alt="">
+                  <li class="nav-item">
+                    <a href="" class="flex gap-2 items-center text-sm">Services <img src="./assets/img/icon/arrow.svg" alt="">
                     </a>
+                    <div class="nav-list">
+                      <div class="spose relative"></div>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Menu 1</a>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Menu 1</a>
+                      <a href=""><span><i class="fa-solid fa-arrow-right"></i></span>Menu 1</a>
+
+                      
+                    </div>
                   </li>
                   <li>
-                    <a href="" class="block text-sm" style="line-height: 5.5rem;">About Us</a>
+                    <a href="" class="block text-sm">About Us</a>
                   </li>
                 </ul>
               </div>
               <div class="text-white hidden lg:flex lg:items-center gap-4 auth-buttons">
-                <a href="" class="text-sm bg-white font-medium px-4 py-2 rounded-xl" style="color: var(--primary-color); box-shadow: var(--primary-color) 4px 4px 0px;">Request vaulation</a>
+                <!-- <a href="" class="shadow-btn text-sm bg-white font-medium px-4 py-2 rounded-xl" style="color: var(--primary-color); box-shadow: var(--primary-color) 4px 4px 0px;">Request vaulation</a> -->
                 <div class="relative nav-menu">
                   <a href="" class="loginAuth flex gap-2 items-center text-sm " style="line-height: 5.5rem;">
-                    <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i> Login <img src="./assets/img/icon/arrow.svg" alt="">
+                    <img src="./assets/img/icon/profile.svg" alt=""> Account <img src="./assets/img/icon/arrow.svg" alt="">
                   </a>
                   <div class="login-submenu absolute -bottom-10 right-0 min-w-max bg-white text-black px-2 transform translate-y-14 border-1 border-gray-500">
                     <a href='' class="py-3 border-b  px-4 flex gap-3 font-medium">
@@ -113,12 +136,15 @@
                   </div>
                 </div>
               </div>
-              <a href="" class="flex gap-2 items-center text-sm text-white hidden" id="customerAccountLogin">
+              <!-- <a href="" class="flex gap-2 items-center text-sm text-white hidden" id="customerAccountLogin">
                 <img src="./assets/img/icon/profile.svg" alt=""> Account <img src="./assets/img/icon/arrow.svg" alt="">
-              </a>
+              </a> -->
               <div class="block lg:hidden">
-                <a href="" class="text-white">
-                  <i class="fa-solid fa-bars"></i>
+                <a id="menu-bar" href="" class="text-white">
+                  <svg fill="none" class="menu-burger" height="30" viewBox="0 0 40 40" width="30" xmlns="http://www.w3.org/2000/svg" id="fi_10513594"><g clip-rule="evenodd" fill="#FFF" fill-rule="evenodd">
+                    <path d="m3.75 10c0-.69036.55964-1.25 1.25-1.25h30c.6904 0 1.25.55964 1.25 1.25 0 .6904-.5596 1.25-1.25 1.25h-30c-.69036 0-1.25-.5596-1.25-1.25z"></path>
+                    <path d="m3.75 30c0-.6904.55964-1.25 1.25-1.25h30c.6904 0 1.25.5596 1.25 1.25s-.5596 1.25-1.25 1.25h-30c-.69036 0-1.25-.5596-1.25-1.25z"></path>
+                    <path d="m10.4167 20c0-.6904.5596-1.25 1.25-1.25h23.3333c.6904 0 1.25.5596 1.25 1.25s-.5596 1.25-1.25 1.25h-23.3333c-.6904 0-1.25-.5596-1.25-1.25z"></path></g></svg>
                 </a>
               </div>
             </div>
