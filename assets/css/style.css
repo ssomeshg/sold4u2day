@@ -17,6 +17,7 @@
   body {
     height: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   body {
     font-family: var(--default-font) !important;
